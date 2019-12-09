@@ -1,6 +1,6 @@
 Consider this -- each Miter account is individually hosted on a user's personal third party server (host) - either purchased or free - as opposed to supplying content to hosted services like Twitter, Facebook and Gab. The user becomes the sole moderator of their own dialog and responsible for their access to their Miter user, image and archive utility.
 
-Centralizing a real-time flow of miters is done by way of RSS-like subscription, that permits the Miter *Stockyard* (desktop) or Miter app user to subscribe to other users. Miter applications and code author(s) never host miter user content, there by can not be accountable -- it simply aggregates the subscribed feeds.
+Centralizing a real-time flow of miters is done by way of RSS-like subscription, that permits the Miter *Stockyard* (desktop) or Miter app (Android/iOS) user to subscribe to other users. Miter applications and code author(s) never host miter user content, there by can not be accountable -- it simply aggregates the subscribed feeds.
 
 A Miter *portal* will permit users to include their accounts in to a hub that will permit their feeds to contribute to trends.
 
