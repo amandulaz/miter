@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<miter>
+  <user>
+</user>
+  <user id="probe">
+    <username>@Username</username>
+    <title>Your Title</title>
+    <bgcolor>#C6BFB6</bgcolor>
+    <btcolor>#d2d3cc</btcolor>
+    <bordercolor>#b2aba3</bordercolor>
+    <linkcolor>#0000BB</linkcolor>
+    <tz>America/Chicago</tz>
+    <pin></pin>
+  </user>
+</miter>
