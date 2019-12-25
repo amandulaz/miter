@@ -1,6 +1,6 @@
 **281019**
 Search pagination  
-Total view counter --> menu
+Total view counter --> menu  
 Daily view counter --> menu
 
 **278019**  
