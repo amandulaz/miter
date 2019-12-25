@@ -1,5 +1,23 @@
 <?
 	$search_get = $_GET['q'];
+	
+	// start number
+	if (isset($_GET['page'])) {
+		$page_id = $_GET['page'];
+		$start_page = $page_id;
+		// Show Last 10
+		$m_page_show = 10;
+		} else {
+		$start_page = 0;
+		$m_page_show = 10;
+	}
+	
+	// remove special characters
+	function clean($string) {
+		$string = str_replace(' ', '-', $string);
+		return preg_replace('/[^A-Za-z0-9\-]/', '', $string);
+	}
+	$search_get = clean($search_get);
 ?>
 
 <table class='static_header'>
@@ -31,7 +49,7 @@
 			$miter_files = count($miter_found);
 			
 			// miter print
-			$miter_print_arc = array_slice($miter_found, 0, 2, true);
+			$miter_print_arc = array_slice($miter_found, $start_page, $m_page_show, true);
 			
 			if ($miter_files > 0) {
 				// set print miter array
@@ -39,28 +57,18 @@
 					$arc = file($step_miter, FILE_IGNORE_NEW_LINES);
 					include 'echo.php';
 				}
-			}
-			
-			// miter list
-			$miter_list_arc = array_slice($miter_found, 2, 20, true);
-			
-			// print miter list
-			if ($miter_files > 2) {
 				
-				echo "<table class='static_table'>
-				<tr><td class='static_td'>
-				<span class='tenon'>";
-				
-				$z = 1;
-				foreach($miter_list_arc as $miter_list) {
-					$miter_list = str_replace("dat/","",$miter_list);
-					$miter_list = str_replace(".txt","",$miter_list);
-					$miter_print = str_replace("_"," ",$miter_list);
-					echo "" . $z++ . ". <a href='index.php?miter=" . $miter_list . "'>" . $miter_print . "</a><br />";
+				// next page
+				if ($miter_files <= $m_page_show || ($page_id + $m_page_show) >= $miter_files){
+					echo "<table class='next_page'><tr><td>
+					<a href='' style='text-decoration:none;color:#808080;'>Next Page</a>
+					</tr></td></table>";
+					} else {
+					$next_page = $start_page + $m_page_show;
+					echo "<table class='next_page'><tr><td>
+					<a href='index.php?q=" . $search_get . "&page=" . $next_page . "' style='text-decoration:none;color:#000;'>Next Page</a>
+					</tr></td></table>";
 				}
-				
-				echo "</span>
-				</td></tr></table>";
 				
 				} else {
 				
@@ -72,4 +80,6 @@
 				
 			}
 			
-		?>		
+			
+			
+		?>										
