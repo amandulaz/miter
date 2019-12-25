@@ -1,3 +1,8 @@
+**281019**
+Search pagination  
+Total view counter --> menu
+Daily view counter --> menu
+
 **278019**  
 primary files to cor/  
 update index.php
