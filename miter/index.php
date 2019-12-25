@@ -65,7 +65,7 @@
 		?>
 		
 		<style>
-			<? include 'style.php'; ?>
+			<? include 'cor/style.php'; ?>
 		</style>
 		
 		
@@ -79,8 +79,7 @@
 				echo $page_title;
 			}
 		?></title>
-		
-		
+	
 	</head>
 	
 	<body>
@@ -104,7 +103,7 @@
 				// static
 				if (isset($_GET['t'])) {
 					
-					include 'static.php';
+					include 'cor/static.php';
 					
 					if(isMobile()) {
 						echo "<div class='bump'></div>";
@@ -142,7 +141,7 @@
 					} else if (isset($_GET['e'])) {
 					
 					if($login == true) {
-						include 'static.php';
+						include 'cor/static.php';
 						
 						if(isMobile()) {
 							echo "<div class='bump'></div>";
@@ -153,7 +152,7 @@
 					// search 
 					} else if (isset($_GET['q'])) {
 					
-					include 'search.php';
+					include 'cor/search.php';
 					
 					if(isMobile()) {
 						echo "<div class='bump'></div>";
@@ -162,7 +161,7 @@
 					// static archive
 					} else if (isset($_GET['a'])) {
 					
-					include 'archive.php';
+					include 'cor/archive.php';
 					
 					if(isMobile()) {
 						echo "<div class='bump'></div>";
@@ -171,12 +170,12 @@
 					// miter iso
 					} else if (isset($_GET['miter'])) {
 					
-					include 'miter.php';
+					include 'cor/miter.php';
 					
 					// miter page
 					} else if (isset($_GET['page'])) {
 					
-					include 'miter.php';
+					include 'cor/miter.php';
 					
 					if(isMobile()) {
 						echo "<div class='bump'></div>";
@@ -185,7 +184,7 @@
 					// miter
 					} else {
 					
-					include 'miter.php';
+					include 'cor/miter.php';
 					
 					if(isMobile()) {
 						echo "<div class='bump'></div>";
@@ -201,7 +200,7 @@
 				}
 				
 				// menu
-				include 'menu.php';
+				include 'cor/menu.php';
 				
 				// admin menu
 				if($login == true) {
