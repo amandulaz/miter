@@ -1,3 +1,6 @@
+**286019**  
+Depreciated /total views/
+
 **281019**  
 Search pagination  
 Total view counter --> menu  
