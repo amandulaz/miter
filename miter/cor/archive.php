@@ -1,10 +1,14 @@
 <table class='static_header'>
-	<tr><td class='static_header_td'>
-		<span class='title'>Archive</span>
-	</td></tr></table>
-	
-    <table class='static_table'>
-		<tr><td class='static_td'>
+	<tr>
+		<td class='static_header_td'>
+			<span class='title'>Archive</span>
+		</td>
+	</tr>
+</table>
+
+<table class='static_table'>
+	<tr>
+		<td class='static_td'>
 			<span class='tenon'>
 				
 				<?
@@ -18,7 +22,7 @@
 						
 						if($login == true) {
 							// delete
-							echo " <a href='scr/delete_static.php?d=" . $file_name . "' onclick='return confirm_delete()'><img src='but/delete.jpg' class='archive_delete'></a>";    
+							echo " | <a href='scr/delete_static.php?d=" . $file_name . "' onclick='return confirm_delete()'>x</a>";    
 						}
 						
 						echo "<br />";
@@ -26,4 +30,6 @@
 				?> 
 				
 			</span>
-		</td></tr></table>
+		</td>
+	</tr>
+</table>		

@@ -25,10 +25,8 @@
     $miter = preg_replace('#\[s\](.*?)\[/s\]#','<s>$1</s>', $miter);
 	
     // table miter
-    echo "<div align='center'>
-	<table class='last_table'>
-	<tr>
-	<td class='last_table_td'>";
+    echo "<table class='last_table'>
+	<tr><td class='last_table_td'>";
     
     // user name
     echo "<span class='name'>" . $user_username . " ";
@@ -233,8 +231,7 @@
 	// close table
 	echo "</td>
 	</tr>
-	</table>
-	</div>";
+	</table>";
 	
 	echo "<div class='bump'></div>";
 	

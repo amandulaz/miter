@@ -232,8 +232,7 @@
     // close table
     echo "</td>
 	</tr>
-	</table>
-	</div>";
+	</table>";
     
     echo "<div class='bump'></div>";
 	
