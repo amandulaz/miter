@@ -44,16 +44,16 @@ a:hover {
 	border:0px solid #FFF;
 	padding:12px 10px 12px 10px;
 	margin:0;
-	border-spacing: 0px;
-	border-collapse: separate;
+	border-spacing:0px;
+	border-collapse:separate;
 }
 
 .whole {
 	border:0px solid #FFF;
 	padding:12px 0px 12px 0px;
 	margin:0;
-	border-spacing: 0px;
-	border-collapse: separate;
+	border-spacing:0px;
+	border-collapse:separate;
 }
 
 .left_td {
@@ -64,7 +64,7 @@ a:hover {
 }
 
 .center_td {
-	padding:0px 10px 0px 0px;
+	padding:0px 15px 0px 0px;
 	margin:0;
 }
 
@@ -120,6 +120,7 @@ a:hover {
 	padding:0;
 	border-spacing:0px;
 	border-collapse:separate;
+	border-radius:5px;
 }
 
 .last_table_pin {
@@ -129,8 +130,9 @@ a:hover {
 	background-color:#FFF;
 	margin:0;
 	padding:0;
-	border-spacing: 0px;
-	border-collapse: separate;
+	border-spacing:0px;
+	border-collapse:separate;
+	border-radius:5px;
 }
 
 .last_table_td {
@@ -182,6 +184,7 @@ a:hover {
 	text-align:center;
 	padding:13px 14px 13px 14px;
 	margin:0;
+	border-radius:5px;
 }
 
 
@@ -249,12 +252,12 @@ a:hover {
 	background-color:#FFF;
 	padding:8px 9px 9px 9px;
 	margin:6px 0px 3px 0px;
-	
 	overflow-wrap:break-word;
 	word-wrap:break-word;
 	word-break:break-all;
-	border-spacing: 0px;
-	border-collapse: separate;
+	border-spacing:0px;
+	border-collapse:separate;
+	border-radius:5px;
 }
 
 .quote_container {
@@ -263,11 +266,11 @@ a:hover {
 	background-color:#FFF;
 	padding:8px 9px 9px 9px;
 	margin:6px 0px 3px 0px;
-	
 	overflow-wrap:anywhere;
 	word-wrap:normal;
-	border-spacing: 0px;
-	border-collapse: separate;
+	border-spacing:0px;
+	border-collapse:separate;
+	border-radius:5px;
 }
 
 
@@ -285,6 +288,8 @@ a:hover {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
 }
 
 .sub_button_table {
@@ -293,8 +298,8 @@ a:hover {
 	background-color:#FFF;
 	padding:5px 0px 0px 0px;
 	margin:0;
-	border-spacing: 0px;
-	border-collapse: separate;
+	border-spacing:0px;
+	border-collapse:separate;
 }
 
 .button_table_holder {
@@ -302,8 +307,8 @@ a:hover {
 	background: #FFF;
 	padding:0px 0px 0px 0px;
 	margin:0;
-	border-spacing: 0px;
-	border-collapse: separate;
+	border-spacing:0px;
+	border-collapse:separate;
 }
 
 .sub_submit_table {
@@ -312,8 +317,10 @@ a:hover {
 	background-color:#FFF;
 	padding:8px 10px 10px 15px;
 	margin:0;
-	border-spacing: 0px;
-	border-collapse: separate;
+	border-spacing:0px;
+	border-collapse:separate;
+    border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
 }
 
 .upload_td {
@@ -334,7 +341,7 @@ a:hover {
 	color:#000;
 	background:#EFEFEF;
 	padding:8px 45px 9px 45px;
-	
+	border-radius:5px;
 }
 
 .button_table {
@@ -342,8 +349,8 @@ a:hover {
 	background-color:#FFF;
 	margin:0;
 	padding:0;
-	border-spacing: 0px;
-	border-collapse: separate;
+	border-spacing:0px;
+	border-collapse:separate;
 }
 
 .td_button {
@@ -377,8 +384,8 @@ a:hover {
 	background-color:#FFF;
 	padding:8px 10px 0px 10px;
 	margin:0;
-	border-spacing: 0px;
-	border-collapse: separate;
+	border-spacing:0px;
+	border-collapse:separate;
 }
 
 .miter_url_field {
@@ -391,6 +398,7 @@ a:hover {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	border-radius:5px;
 }
 
 .gen_table {
@@ -398,8 +406,9 @@ a:hover {
 	border:1px solid #b2aba3;
 	padding:0;
 	margin:0;
-	border-spacing: 0px;
-	border-collapse: separate;
+	border-spacing:0px;
+	border-collapse:separate;
+	border-radius:5px;
 }
 
 .gen_td {
@@ -407,8 +416,8 @@ a:hover {
 	border:0px solid #fff;
 	padding:0;
 	margin:0;
-	border-spacing: 0px;
-	border-collapse: separate;
+	border-spacing:0px;
+	border-collapse:separate;
 }
 
 
@@ -425,8 +434,8 @@ a:hover {
 	border:0px solid #FFF;
 	padding:7px 0px 3px 0px;
 	margin:0;
-	border-spacing: 0px;
-	border-collapse: separate;
+	border-spacing:0px;
+	border-collapse:separate;
 }
 
 .button_td {
@@ -479,8 +488,10 @@ a:hover {
 	background-color:#DDDDDD;
 	margin:0;
 	padding:0;
-	border-spacing: 0px;
-	border-collapse: separate;
+	border-spacing:0px;
+	border-collapse:separate;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
 }
 
 .static_header_td {
@@ -501,8 +512,10 @@ a:hover {
 	background-color:#FFF;
 	margin:0;
 	padding:0;
-	border-spacing: 0px;
-	border-collapse: separate;
+	border-spacing:0px;
+	border-collapse:separate;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
 }
 
 .static_td {
@@ -593,6 +606,7 @@ pre {
 	white-space:-o-pre-wrap;
 	word-wrap:break-word;
 	overflow-wrap:break-word;
+	border-radius:5px;
 }
 
 
@@ -605,8 +619,10 @@ pre {
 	background-color:#FFF;
 	padding:0;
 	margin:0;
-	border-spacing: 0px;
-	border-collapse: separate;
+	border-spacing:0px;
+	border-collapse:separate;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
 }
 
 .input_td {
@@ -625,8 +641,8 @@ pre {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	border-spacing: 0px;
-	border-collapse: separate;
+	border-spacing:0px;
+	border-collapse:separate;
 }
 
 .html_table {
@@ -635,8 +651,8 @@ pre {
 	background-color:#FFF;
 	padding:10px 14px 5px 14px;
 	margin:0;
-	border-spacing: 0px;
-	border-collapse: separate;
+	border-spacing:0px;
+	border-collapse:separate;
 }
 
 .html_td {
@@ -662,8 +678,8 @@ pre {
 	background-color:#FFF;
 	padding:11px 10px 10px 10px;
 	margin:0;
-	border-spacing: 0px;
-	border-collapse: separate;
+	border-spacing:0px;
+	border-collapse:separate;
 }
 
 .title_td {
@@ -681,6 +697,7 @@ pre {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	border-radius:5px;
 }
 
 .submit_table {
@@ -689,8 +706,10 @@ pre {
 	background-color:#FFF;
 	padding:5px 0px 15px 0px;
 	margin:0;
-	border-spacing: 0px;
-	border-collapse: separate;
+	border-spacing:0px;
+	border-collapse:separate;
+    border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
 }
 
 .submit_td {
@@ -705,6 +724,7 @@ pre {
 	background:#EFEFEF;
 	padding:8px 45px 9px 45px;
 	margin:0;
+	border-radius:5px;
 }
 
 
@@ -723,6 +743,7 @@ pre {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	border-radius:5px;
 }
 
 .search_submit {
@@ -751,8 +772,10 @@ pre {
 	background-color:#DDDDDD;
 	margin:0;
 	padding:0;
-	border-spacing: 0px;
-	border-collapse: separate;
+	border-spacing:0px;
+	border-collapse:separate;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
 }
 
 .menu_header_td {
@@ -762,14 +785,27 @@ pre {
 	word-wrap:normal;
 }
 
+.menu_table_no_title {
+	width:100%;
+	border:1px solid #b2aba3;
+	background-color:#FFF;
+	margin:0;
+	padding:0;
+	border-spacing:0px;
+	border-collapse:separate;
+	border-radius:5px;
+}
+
 .menu_table {
 	width:100%;
 	border:1px solid #b2aba3;
 	background-color:#FFF;
 	margin:0;
 	padding:0;
-	border-spacing: 0px;
-	border-collapse: separate;
+	border-spacing:0px;
+	border-collapse:separate;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
 }
 
 .menu_td {
@@ -838,8 +874,8 @@ pre {
 	padding:0;
 	margin:0;
 	border:0pc solid #FFF;
-	border-spacing: 0px;
-	border-collapse: separate;
+	border-spacing:0px;
+	border-collapse:separate;
 }
 
 
