@@ -1,3 +1,8 @@
+**296019**  
+File size to image/doc lists : scr/
+Table layout image/doc lists : scr/
+Aesthetic changes : index.css
+
 **286019**  
 Depreciated /total views/
 
