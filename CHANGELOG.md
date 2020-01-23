@@ -1,5 +1,6 @@
 **310019**  
 cor/style.php menu_border fix
+@username in quote fix  
 
 **296019**  
 File size to image/doc lists : scr/  
