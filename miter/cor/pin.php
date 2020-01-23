@@ -146,7 +146,7 @@
 			$quote_page_contents_p = file_get_contents($pin_link);
 			preg_match("/<title>(.+)<\/title>/i",$quote_page_contents_p,$quote_p_username);
 			$quote_p_username = str_replace('Miter -','',$quote_p_username[1]);
-			echo "<span class='name'>" . $quote_p_username . " ";
+			echo "<span class='name'>@" . $quote_p_username . " ";
 			$q_start_p = new DateTime('now');
 			$q_end_p  = new DateTime($quote_p_gdate);
 			$q_dif_p = $q_start_p->diff($q_end_p);
