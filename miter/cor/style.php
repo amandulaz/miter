@@ -40,6 +40,10 @@ border-color:<? echo $user_border; ?>;
 border-color:<? echo $user_border; ?>;
 }
 
+.menu_table_no_title {
+border-color:<? echo $user_border; ?>;
+}
+
 .next_page {
 background-color:<? echo $user_header; ?>;
 border-color:<? echo $user_border; ?>;
