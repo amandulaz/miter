@@ -108,8 +108,44 @@ a:hover {
 }
 
 
+/* Profile */
+
+
+.profile_table {
+	width:100%;
+	border:0px solid #fff;
+	background-color:#FFF;
+	margin:0;
+	padding:0;
+}
+
+.profile_avatar_td {
+	width:50px;
+	padding:0;
+	margin:0;
+}
+
+.avatar {
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	border:0px solid #fff;
+	display:block;
+}
+
+.profile_name_td {
+	padding:0px 0px 0px 7px;
+	margin:0;
+	line-height:21px;
+	overflow-wrap:break-word;
+	text-align:left;
+	vertical-align:middle;
+}
+
+
 
 /* Miter Table */
+
 
 .last_table {
 	width:100%;
@@ -145,6 +181,7 @@ a:hover {
 
 
 /* Miter Footer */
+
 
 .footer_table {
 	border:0px solid #FFF;
@@ -731,6 +768,7 @@ pre {
 
 /* Search */
 
+
 .search_field {
 	width:70%;
 	font:normal 13px verdana;
@@ -743,7 +781,8 @@ pre {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	border-radius:5px;
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
 }
 
 .search_submit {
@@ -752,6 +791,8 @@ pre {
 	color:#000;
 	background:#EFEFEF;
 	padding:6px 15px 6px 15px;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
 }
 
 .search_found {
@@ -763,6 +804,7 @@ pre {
 
 
 /* Menu */
+
 
 .menu_header {
 	width:100%;
@@ -819,42 +861,47 @@ pre {
 
 /* Settings */
 
+
 .settings_field {
-	width:40%;
+	width:100%;
 	font:normal 13px verdana;
 	color:#000000;
-	border-width:1px 0px 1px 1px;
+	border-width:1px 1px 0px 1px;
 	border-style:solid;
 	border-color:#A5A5A5;
-	padding:6px 8px 6px 8px;
+	padding:8px 8px 8px 8px;
 	background-color:#FFF;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
 }
 
 .settings_dropdown {
-	width:40%;
+	width:100%;
 	font:normal 13px verdana;
 	color:#000000;
-	border-width:1px 0px 1px 1px;
+	border-width:1px 1px 0px 1px;
 	border-style:solid;
 	border-color:#A5A5A5;
-	padding:5px 8px 6px 8px;
+	padding:8px 8px 8px 8px;
 	background-color:#FFF;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
 }
 
-.settings_field_favicon {
-	width:40%;
+.settings_field_file {
+	width:100%;
 	font:normal 13px verdana;
 	color:#000000;
 	border-width:0px;
 	border-style:solid;
 	border-color:#A5A5A5;
-	padding:6px 8px 6px 0px;
+	padding:8px 8px 8px 0px;
 	background-color:#FFF;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -862,11 +909,26 @@ pre {
 }
 
 .settings_submit {
+	width:100%;
 	border:1px solid #A5A5A5;
 	font:normal 13px verdana;
 	color:#222222;
 	background:#EFEFEF;
-	padding:6px 15px 6px 15px;
+	padding:8px 0px 8px 0px;
+	text-align:center;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+}
+
+.settings_submit_solo {
+	width:100%;
+	border:1px solid #A5A5A5;
+	font:normal 13px verdana;
+	color:#222222;
+	background:#EFEFEF;
+	padding:8px 0px 8px 0px;
+	text-align:center;
+	border-radius:5px;
 }
 
 .setting_table {

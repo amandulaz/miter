@@ -23,13 +23,15 @@
 			$user_file = 'usr/user.xml';
 			$user_get = simplexml_load_file($user_file);
 			$user_array = $user_get->xpath("/miter/user[@id='probe']");
-			$user_username =  $user_array[0]->username;
+			$user_username =  $user_array[0]->name;
 			$user_title =     $user_array[0]->title;
-			$user_bg =        $user_array[0]->bgcolor;
-			$user_header =    $user_array[0]->btcolor;
-			$user_border =    $user_array[0]->bordercolor;
-			$user_link =      $user_array[0]->linkcolor;
-			$user_tz =        $user_array[0]->tz;
+			$user_avatar =    $user_array[0]->avatar;
+			$user_bio =       $user_array[0]->bio;
+			$user_bg =        $user_array[0]->bg;
+			$user_header =    $user_array[0]->header;
+			$user_border =    $user_array[0]->border;
+			$user_link =      $user_array[0]->link;
+			$user_tz =        $user_array[0]->time;
 			$user_pin =       $user_array[0]->pin;
 			date_default_timezone_set($user_tz);
 			
@@ -79,7 +81,7 @@
 				echo $page_title;
 			}
 		?></title>
-	
+		
 	</head>
 	
 	<body>
@@ -197,7 +199,12 @@
 					} else {
 					echo "</td><td class='center_td'>";
 					echo "</td><td class='right_td'>";
+					
 				}
+				
+				// profile
+				include 'cor/profile.php';
+				echo "<div class='bump'></div>";
 				
 				// menu
 				include 'cor/menu.php';
