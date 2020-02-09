@@ -1,3 +1,14 @@
+**327019** [Critical]  
+profile panel added  
+avatar added  
+bio added  
+user.xml updated  
+index.php updated  
+styling updated  
+settings.php updated  
+settings authors updated  
+login updated
+
 **310019**  
 cor/style.php menu_border fix  
 @username in quote fix  
