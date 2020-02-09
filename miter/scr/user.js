@@ -6,8 +6,15 @@ function validate_user() {
 }
 
 function validate_title() {
-    var colorinput = document.forms["miter_title_form"]["user_title"].value;
-    if (colorinput == "") {
+    var titleinput = document.forms["miter_title_form"]["user_title"].value;
+    if (titleinput == "") {
+        return false;
+	}
+}
+
+function validate_bio() {
+    var bioinput = document.forms["miter_bio_form"]["miter_bio"].value;
+    if (bioinput == "") {
         return false;
 	}
 }
@@ -20,15 +27,15 @@ function validate_color() {
 }
 
 function validate_header() {
-    var colorinput = document.forms["miter_header_form"]["user_header"].value;
-    if (colorinput == "") {
+    var headerinput = document.forms["miter_header_form"]["user_header"].value;
+    if (headerinput == "") {
         return false;
 	}
 }
 
 function validate_border() {
-    var colorinput = document.forms["miter_border_form"]["user_border"].value;
-    if (colorinput == "") {
+    var borderinput = document.forms["miter_border_form"]["user_border"].value;
+    if (borderinput == "") {
         return false;
 	}
 }
