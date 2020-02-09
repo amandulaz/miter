@@ -6,10 +6,6 @@ a:link a:visited a:hover a:active {
 color:<? echo $user_link; ?>;
 }
 
-.avatar {
-border-color:<? echo $user_border; ?>;
-}
-
 .last_table {
 border-color:<? echo $user_border; ?>;
 }
