@@ -1,7 +1,7 @@
 <table class='static_header'>
 	<tr>
 		<td class='static_header_td'>
-			<span class='title'>Archive</span>
+			<span class='title'>Tenon Archive</span>
 		</td>
 	</tr>
 </table>
@@ -9,27 +9,26 @@
 <table class='static_table'>
 	<tr>
 		<td class='static_td'>
-			<span class='tenon'>
+			
+			<table style='width:100%;padding:0;margin:0;border:0px solid #fff;'>
 				
-				<?
+				<?	
 					$i = 1;
 					$file_list = glob("ten/*.txt");
 					foreach($file_list as $file_name) {
 						$file_name = str_replace("ten/","",$file_name);
 						$file_name = str_replace(".txt","",$file_name);
 						$file_print = str_replace("_"," ",$file_name);
-						echo "" . $i++ . ". <a href='index.php?t=" . $file_name . "'>" . $file_print . "</a>";
 						
+						echo "<tr><td align='left'><span class='tenon'>" . $i++ . ". <a href='index.php?t=" . $file_name . "' target='_blank'>" . substr($file_print, 0, 35) . "</a></span>";
 						if($login == true) {
-							// delete
-							echo " | <a href='scr/delete_static.php?d=" . $file_name . "' onclick='return confirm_delete()'>x</a>";    
+							echo "</td><td align='right'><span class='name'><a href='scr/delete_image_m.php?d=" . $file_name . "' onclick='return confirm_delete()'>X</a></span>";
 						}
-						
-						echo "<br />";
+						echo "</td></tr>";
 					}
 				?> 
 				
-			</span>
+			</table>
 		</td>
 	</tr>
-</table>		
+</table>	
