@@ -3,13 +3,15 @@
   <user>
 </user>
   <user id="probe">
-    <username>@Username</username>
-    <title>Your Title</title>
-    <bgcolor>#C6BFB6</bgcolor>
-    <btcolor>#d2d3cc</btcolor>
-    <bordercolor>#b2aba3</bordercolor>
-    <linkcolor>#0000BB</linkcolor>
-    <tz>America/Chicago</tz>
+	<name>@username</name>
+    <title>Title</title>
+    <avatar>avatar.png</avatar>
+    <bio>Miter-er</bio>
+    <bg>#DAE0E6</bg>
+    <header>#E9ECEF</header>
+    <border>#bbbbbb</border>
+    <link>#0000BB</link>
+    <time>America/Chicago</time>
     <pin></pin>
   </user>
 </miter>
