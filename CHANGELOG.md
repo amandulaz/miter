@@ -1,3 +1,6 @@
+**329019**  
+time zone scr/miter.php bug [critical]
+
 **327019**  
 profile panel added  
 avatar added  
