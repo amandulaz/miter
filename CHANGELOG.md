@@ -1,5 +1,5 @@
 **329019**  
-time zone scr/miter.php bug [critical]
+time zone scr/miter.php bug
 
 **327019**  
 profile panel added  
