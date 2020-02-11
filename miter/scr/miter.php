@@ -16,7 +16,7 @@
 	$user_get = simplexml_load_file($user_file);
 	$user_array = json_decode(json_encode($user_get), 1);
 	$user_set = end($user_array['user']);
-	$user_time_zone = $user_set['tz'];
+	$user_time_zone = $user_set['time'];
 	date_default_timezone_set($user_time_zone);
 	
 	// convert gregorian to otc
