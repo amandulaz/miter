@@ -18,5 +18,5 @@ You must give permission to outgoing connections with in your host firewall to p
 **Warning**  
 Changing coded aesthetics and implementation is welcomed - tho we discourage you from altering Miter authoring format. Corruption of the standardized format will deny your data from public visibility and sharing.  
 
-**Update**  
+**Updates**  
 Updates are frequent and notification(s) are currently isolated to https://github.com/vijemiller/miter/ and http://vijemiller.com
