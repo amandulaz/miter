@@ -3,9 +3,9 @@
   <user>
 </user>
   <user id="probe">
-	<name>@username</name>
+    <name>@username</name>
     <title>Title</title>
-    <avatar>avatar.png</avatar>
+    <avatar></avatar>
     <bio>Miter-er</bio>
     <bg>#DAE0E6</bg>
     <header>#E9ECEF</header>
