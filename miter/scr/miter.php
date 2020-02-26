@@ -24,7 +24,7 @@
 	$min = date("i");
 	$sec = date("s");
 	
-	$day = date("z") + 1;
+	$day = date("z");
 	if ($day < 79) {
 		$final_day = $day + 287;
 		} else if ($day >= 79) {
