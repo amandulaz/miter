@@ -1,6 +1,6 @@
 **343019**  
 critical update --> scr/miter.php  
-**Warning**: 24hrs must pass after update before new miters appear
+**Warning**: 24hrs must pass after update before new miters appear  
 profile css spacing change --> index.css
 
 **329019**  
