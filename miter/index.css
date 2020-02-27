@@ -121,7 +121,7 @@ a:hover {
 
 .profile_avatar_td {
 	width:50px;
-	padding:0;
+	padding:0px 0px 1px 0px;
 	margin:0;
 }
 
