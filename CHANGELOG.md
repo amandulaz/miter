@@ -1,3 +1,7 @@
+**343019**  
+critical update --> scr/miter.php  
+note: 24 hours must pass update before /new/ miters sorted
+
 **329019**  
 time zone scr/miter.php bug
 
