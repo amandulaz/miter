@@ -33,7 +33,7 @@ a:hover {
 	overflow-wrap:anywhere;
 	word-wrap: break-word;
 	word-break: break-word;
-}
+	}
 
 
 
@@ -198,6 +198,12 @@ a:hover {
 .footer_button_img {
 	width:18px;
 	height:18px;
+	border:0px solid #FFF;
+}
+
+.button_side {
+	width:13px;
+	height:13px;
 	border:0px solid #FFF;
 }
 
@@ -686,26 +692,42 @@ pre {
 	width:100%;
 	border:0px solid #AAA;
 	background-color:#FFF;
-	padding:10px 14px 5px 14px;
+	padding:10px 0px 5px 0px;
 	margin:0;
 	border-spacing:0px;
 	border-collapse:separate;
 }
 
 .html_td {
-	padding:0px 0px 6px 0px;
+	padding:0;
+	margin:0;
+}
+
+.html_inset_table {
+	width:90%;
+	border:1px solid #DDDDDD;
+	background-color:#efefef;
+	padding:12px 10px 4px 10px;
+	margin:0;
+	border-spacing:0px;
+	border-collapse:separate;
+	border-radius:5px;
+}
+
+.html_inset_td {
+	padding:0;
 	margin:0;
 }
 
 .tenon_format_button {
 	font:normal 13px verdana;
 	color:#A5A5A5;
-	margin:0px 7px 8px 0px;
+	margin:0px 7px 7px 0px;
 	padding:6px 7px 6px 7px;
 	text-align:center;
 	text-decoration:none;
 	border:1px solid #D5D5D5;
-	background-color:#F5F5F5;
+	background-color:#FFF;
 	border-radius:4px;
 }
 
@@ -741,7 +763,7 @@ pre {
 	width:100%;
 	border:0px solid #AAA;
 	background-color:#FFF;
-	padding:5px 0px 15px 0px;
+	padding:10px 0px 15px 0px;
 	margin:0;
 	border-spacing:0px;
 	border-collapse:separate;
