@@ -1,5 +1,11 @@
 <?
 	
+	// WARNING
+	// Changing coded aesthetics and implementation is welcomed.
+	// -- tho we discourage you from altering this file (scr/miter.php).
+	// Corruption of the standardized format will deny your
+	// data from public visibility and sharing.
+	
 	// upload image
 	if (!empty($_FILES['upload']['name'])) {
 		$img_name = $_FILES['upload']['name'];
