@@ -1,3 +1,9 @@
+**348019**  
+panels are here!  
+removed menu_edit  
+replaced with panels (cor/scr/usr)  
+**Warning** back-up your menu.txt
+
 **343019**  
 critical update --> scr/miter.php  
 **Warning**: 24hrs must pass after update before new miters appear  
