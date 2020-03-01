@@ -1,6 +1,6 @@
 **348019**  
 panels are here!  
-removed menu_edit  
+removed cor/menu scr/menu_edit menu_write usr/menu.txt  
 replaced with panels (cor/scr/usr)  
 **Warning** back-up your menu.txt
 
