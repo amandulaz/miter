@@ -656,6 +656,7 @@ pre {
 
 /* Tenon Input */
 
+
 .input_table {
 	width:100%;
 	border:0px solid #b2aba3;
@@ -686,6 +687,30 @@ pre {
 	box-sizing: border-box;
 	border-spacing:0px;
 	border-collapse:separate;
+}
+
+.panel_option_housing {
+	width:100%;
+	border:0px solid #AAA;
+	background-color:#FFF;
+	padding:0;
+	margin:0;
+	border-spacing:0px;
+	border-collapse:separate;
+}
+
+.panel_option_table {
+	border:0px solid #AAA;
+	background-color:#FFF;
+	padding:9px 0px 1px 0px;
+	margin:0;
+	border-spacing:0px;
+	border-collapse:separate;
+}
+
+.panel_option_td {
+	padding:0;
+	margin:0;
 }
 
 .html_table {

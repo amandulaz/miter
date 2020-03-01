@@ -119,8 +119,8 @@
 						$get_user = $_GET['u'];
 						if ($get_user == 'new') {
 							include 'scr/new.php';
-							} else if ($get_user == 'menu') {
-							include 'scr/menu_edit.php';
+							} else if ($get_user == 'panels') {
+							include 'scr/panels.php';
 							} else if ($get_user == 'upload') {
 							include 'scr/upload.php';
 							} else if ($get_user == 'm_images') {
@@ -207,7 +207,7 @@
 				echo "<div class='bump'></div>";
 				
 				// menu
-				include 'cor/menu.php';
+				include 'cor/panels.php';
 				
 				// admin menu
 				if($login == true) {
@@ -224,4 +224,4 @@
 </div>
 
 </body>
-</html>															
+</html>																				
