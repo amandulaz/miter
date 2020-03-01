@@ -31,8 +31,8 @@
 						$file_loc = "upl/" . $file_name;
 						$file_size = filesize($file_loc);
 						
-						echo "<tr><td align='left'><span class='tenon'>" . $i++ . ". <a href='upl/" . $file_name . "' target='_blank'>" . substr($file_name, 0, 30) . "</a></span>";
-						echo "</td><td align='right'><span class='name'>" . formatbytes($file_size) . " <a href='scr/delete_image_m.php?d=" . $file_name . "' onclick='return confirm_delete()'>X</a></span>";
+						echo "<tr><td align='left'><span class='tenon'>" . $i++ . ". <a href='upl/" . $file_name . "' target='_blank'>" . substr($file_name, 0, 25) . "</a></span>";
+						echo "</td><td align='right'><span class='name'>" . formatbytes($file_size) . " <a href='scr/delete_image_m.php?d=" . $file_name . "' onclick='return confirm_delete()'><img src='but/delete.jpg' class='button_side'></a></span>";
 						echo "</td></tr>";
 					}
 				?>

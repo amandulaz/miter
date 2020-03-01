@@ -13,6 +13,7 @@
 						<input type="button" value="_blank"           onclick="inserttag('tenon', '<a href=\'\' target=\'_blank\'>');"  class="tenon_format_button" />
 						<input type="button" value="?t="              onclick="inserttag('tenon', '<a href=\'?t=\'>');"                 class="tenon_format_button" />
 						<input type="button" value="/a"               onclick="inserttag('tenon', '</a>');"                             class="tenon_format_button" />
+						<input type="button" value="br"               onclick="inserttag('tenon', '<br />');"                             class="tenon_format_button" />
 						<input type="button" value="/div"             onclick="inserttag('tenon', '</div>');"                           class="tenon_format_button" />
 						<input type="button" value="hr"               onclick="inserttag('tenon', '<hr>');"                             class="tenon_format_button" />
 						<input type="button" value="&amp;lt;"         onclick="inserttag('tenon', '&amp;lt;');"                         class="tenon_format_button" />

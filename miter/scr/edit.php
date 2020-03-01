@@ -24,7 +24,7 @@
 						<tr>
 							<td class="title_td">
 								
-								<input id="title" name="title" class="title_field" value="<? echo $title; ?>">
+								<input id="title" name="title" class="title_field" value="<? echo $title; ?>" required>
 								
 							</td>
 						</tr>

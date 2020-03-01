@@ -5,6 +5,13 @@ function validate() {
 	}
 }
 
+function validate_panel() {
+    var panelbox = document.forms["panelform"]["panel"].value;
+    if (panelbox == "") {
+        return false;
+	}
+}
+
 function inserttag(areaId, text) {
     var txtarea = document.getElementById(areaId);
     var scrollPos = txtarea.scrollTop;
