@@ -6,6 +6,10 @@
 	$txt_file = "../pan/" . $panel_name . ".txt";
 	unlink($txt_file);
 	
+	// get title
+	$panel_title = $_POST["title"];
+	
+	if ($panel_title != $panel_name) {
 	// remove line from usr/panels.txt
 	$panel_dir = '../usr/panels.txt';
 	$panel_data = array_map('trim', file($panel_dir));
@@ -19,9 +23,7 @@
 	$f_panel = fopen($panel_dir, "w+") or die("Error");
 	fwrite($f_panel, implode("\n", $panel_data));
 	fclose($f_panel);
-	
-	// get title
-	$panel_title = $_POST["title"];
+	}
 	
 	// get post
 	$panel_post = $_POST["panel"];
@@ -50,6 +52,7 @@
 	fwrite($data_file, $panel_post);
 	fclose($data_file);
 	
+	if ($panel_title != $panel_name) {
 	// get hide panel
 	// 1 = Show 2 = Hide
 	if(isset($_POST["hidepanel"]) && $_POST["hidepanel"] == 'yes') {
@@ -73,6 +76,7 @@
 	$panel_usr = fopen("../usr/panels.txt", "a") or die("Error");
 	fwrite($panel_usr, "\n" . $panel_insert);	
 	fclose($panel_usr);
+	}
 	
 	header("location:../index.php?u=panels");
 ?>
