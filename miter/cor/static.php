@@ -13,14 +13,18 @@
 	list($title, $odate, $gdate, $tenon) = explode("|&|", $tenon_data);
 	
 	echo "<table class='static_header'>
-	<tr><td class='static_header_td'>";
+	<tr>
+	<td class='static_header_td'>";
 	
 	echo "<span class='title'>" . $title . "</span>";
 	
-	echo "</td></tr></table>";
+	echo "</td>
+	</tr>
+	</table>";
 	
 	echo "<table class='static_table'>
-	<tr><td class='static_td'>";
+	<tr>
+	<td class='static_td'>";
 	
 	// print
 	echo "<span class='tenon'>" . $tenon . "</span>";
@@ -41,7 +45,8 @@
 		// edit
 		echo "<a href='index.php?e=" . $tenon_id . "#edit'><img src='but/edit.jpg' class='button_img_edit' title='Edit'></a>";
 		
-		echo "</td><td class='button_td'>";
+		echo "</td>
+		<td class='button_td'>";
 		
 		// delete
 		echo "<a href='scr/delete_static.php?d=" . $tenon_id . "' onclick='return confirm_delete()'><img src='but/delete.jpg' class='button_img' title='Delete'></a>";
@@ -52,7 +57,9 @@
 		
 	}  
 	
-	echo "</td></tr></table>";
+	echo "</td>
+	</tr>
+	</table>";
 	
 	// edit
 	if($login == true) {

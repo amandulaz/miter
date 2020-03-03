@@ -53,14 +53,22 @@
 		
 		// next page
 		if ($miter_count <= $m_page_show || ($page_id + $m_page_show) >= $miter_count){
-			echo "<table class='next_page'><tr><td>
+			echo "<table class='next_page'>
+			<tr>
+			<td>
             <a href='' style='text-decoration:none;color:#808080;'>Next Page</a>
-            </tr></td></table>";
+            </tr>
+			</td>
+			</table>";
 			} else {
 			$next_page = $start_page + $m_page_show;
-			echo "<table class='next_page'><tr><td>
+			echo "<table class='next_page'>
+			<tr>
+			<td>
             <a href='index.php?page=" . $next_page . "' style='text-decoration:none;color:#000;'>Next Page</a>
-            </tr></td></table>";
+            </tr>
+			</td>
+			</table>";
 		}
 		
 	}

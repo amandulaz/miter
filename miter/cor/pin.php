@@ -167,14 +167,18 @@
 			echo $quote_p . "<br />";
 			echo "<div class='quote_permalink'></div>";
 			echo "<a href='" . $pin_link . "' target='_blank' class='permalink' style='color:silver;'>" . $quote_p_odate . "</a>";
-			echo "</td></tr></table>";
+			echo "</td>
+			</tr>
+			</table>";
 			
 			// link
 			} else {
 			if (strlen($pin_link) != 0) {
 				echo "<table class='link_container'><tr><td>";
 				echo "<a href='" . $pin_link . "' target='_blank'>" . $pin_link . "</a>";
-				echo "</td></tr></table>";
+				echo "</td>
+				</tr>
+				</table>";
 			}
 		}
 	}
@@ -197,33 +201,39 @@
 		} else {
         echo "<img src='but/quote.jpg' class='footer_button_img' title='Quote'>";
 	}
-	echo "</td><td class='footer_button_td'>";
+	echo "</td>
+	<td class='footer_button_td'>";
 	
 	// like
 	echo "<img src='but/like.jpg' class='footer_button_img' title='Like'>";
 	
-	echo "</td><td class='footer_button_td'>";
+	echo "</td>
+	<td class='footer_button_td'>";
 	
 	// share
 	echo "<a href='index.php?miter=" . $pin_url_txt . "'><img src='but/share.jpg' class='footer_button_img' title='Share'></a>";
 	
-	echo "</td><td class='footer_button_td'>";
+	echo "</td>
+	<td class='footer_button_td'>";
 	
 	// pinned
 	echo "<img src='but/pin.jpg' class='footer_button_img' title='Pinned'>";
 	
 	if($login == true) {
-        echo "</td><td class='footer_button_td'>";
+        echo "</td>
+		<td class='footer_button_td'>";
         
         // delete
         echo "<a href='scr/delete.php?d=" . $pin_url_txt . "' onclick='return confirm_delete()'><img src='but/delete.jpg' class='footer_button_img' title='Delete'></a>";
 		
-        echo "</td><td class='footer_button_td'>";
+        echo "</td>
+		<td class='footer_button_td'>";
         
         // edit
         echo "<a href='index.php?edit=" . $pin_url_txt . "'><img src='but/edit.jpg' class='footer_button_img' title='Edit'></a>";
 		
-        echo "</td><td class='footer_button_td'>";
+        echo "</td>
+		<td class='footer_button_td'>";
 		
         // unpin
         echo "<a href='scr/pin.php'><img src='but/pin.jpg' class='footer_button_img' title='Unpin'></a>";
@@ -240,5 +250,4 @@
 	</div>";
     
 	echo "<div class='bump'></div>";
-    
 ?>

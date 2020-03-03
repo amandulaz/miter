@@ -33,7 +33,8 @@
 	
 	// table miter
 	echo "<table class='last_table'>
-	<tr><td class='last_table_td'>";
+	<tr>
+	<td class='last_table_td'>";
 	
 	// user name
 	echo "<span class='name'>" . $user_username . " ";
@@ -168,14 +169,18 @@
 			echo $quote . "<br />";
 			echo "<div class='quote_permalink'></div>";
 			echo "<a href='" . $last_link . "' target='_blank' class='permalink' style='color:silver;'>" . $quote_odate . "</a>";
-			echo "</td></tr></table>";
+			echo "</td>
+			</tr>
+			</table>";
 			
 			// link
 			} else {
 			if (strlen($last_link) != 0) {
 				echo "<table class='link_container'><tr><td>";
 				echo "<a href='" . $last_link . "' target='_blank'>" . $last_link . "</a>";
-				echo "</td></tr></table>";
+				echo "</td>
+				</tr>
+				</table>";
 			}
 		}
 	}
@@ -198,28 +203,33 @@
 		} else {
         echo "<img src='but/quote.jpg' class='footer_button_img' title='Quote'>";
 	}
-	echo "</td><td class='footer_button_td'>";
+	echo "</td>
+	<td class='footer_button_td'>";
 	
 	// like
 	echo "<img src='but/like.jpg' class='footer_button_img' title='Like'>";
 	
-	echo "</td><td class='footer_button_td'>";
+	echo "</td>
+	<td class='footer_button_td'>";
 	
 	// share
 	echo "<a href='index.php?miter=" . $var_id . "'><img src='but/share.jpg' class='footer_button_img' title='Share'></a>";
 	
 	if($login == true) {
-        echo "</td><td class='footer_button_td'>";
+        echo "</td>
+		<td class='footer_button_td'>";
         
         // delete
         echo "<a href='scr/delete.php?d=" . $var_id . "' onclick='return confirm_delete()'><img src='but/delete.jpg' class='footer_button_img' title='Delete'></a>";
 		
-        echo "</td><td class='footer_button_td'>";
+        echo "</td>
+		<td class='footer_button_td'>";
         
         // edit
         echo "<a href='index.php?edit=" . $var_id . "'><img src='but/edit.jpg' class='footer_button_img' title='Edit'></a>";
 		
-        echo "</td><td class='footer_button_td'>";
+        echo "</td>
+		<td class='footer_button_td'>";
 		
         // pin
         echo "<a href='scr/pin.php?miter=" . $var_id . "'><img src='but/pin.jpg' class='footer_button_img' title='Pin'></a>";
@@ -229,11 +239,9 @@
 	</tr>
 	</table>";   
     
-    // close table
     echo "</td>
 	</tr>
-	</table>";
+	</table>"; 
     
     echo "<div class='bump'></div>";
-	
 ?>

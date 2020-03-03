@@ -28,9 +28,7 @@
 					<table class="menu_table">
 						<tr>
 							<td class="menu_td">
-								<span class="tenon">
-									<? include $panel_body; ?>
-								</span>
+								<span class="tenon"><? include $panel_body; ?></span>
 							</td>
 						</tr>
 					</table>
@@ -41,9 +39,7 @@
 					<table class="menu_table_no_title">
 						<tr>
 							<td class="menu_td">
-								<span class="tenon">
-									<? include $panel_body; ?>
-								</span>
+								<span class="tenon"><? include $panel_body; ?></span>
 							</td>
 						</tr>
 					</table>
@@ -64,9 +60,7 @@
 				<table class="menu_table">
 					<tr>
 						<td class="menu_td">
-							<span class="tenon">
-								<? include $panel_body; ?>
-							</span>
+							<span class="tenon"><? include $panel_body; ?></span>
 						</td>
 					</tr>
 				</table>
@@ -77,9 +71,7 @@
 				<table class="menu_table_no_title">
 					<tr>
 						<td class="menu_td">
-							<span class="tenon">
-								<? include $panel_body; ?>
-							</span>
+							<span class="tenon"><? include $panel_body; ?></span>
 						</td>
 					</tr>
 				</table>
@@ -107,11 +99,9 @@
 <table class="menu_table">
 	<tr>
 		<td class="menu_td">
-			<span class="tenon">
-				<a href="dat/" target="_blank" style="color:#000;"><? echo number_format($miter_count); ?> miters</a><br />
-				<a href="index.php?a=" style="color:#000;"><? echo number_format($tenon_count); ?> tenons</a><br />
-			<? echo number_format($c_d_count); ?> views today</a>
-		</span>
-	</td>
-</tr>
+			<span class="tenon"><a href="dat/" target="_blank" style="color:#000;"><? echo number_format($miter_count); ?> miters</a><br />
+			<a href="index.php?a=" style="color:#000;"><? echo number_format($tenon_count); ?> tenons</a><br />
+			<? echo number_format($c_d_count); ?> views today</a></span>
+		</td>
+	</tr>
 </table>

@@ -1,7 +1,6 @@
 <table class="menu_table_no_title">
 	<tr>
 		<td class="menu_td">
-			
 			<table class="profile_table">
 				<tr>
 					<td class="profile_avatar_td">
@@ -13,7 +12,6 @@
 					</td>
 				</tr>
 			</table>
-			
 		</td>
 	</tr>
 </table>
