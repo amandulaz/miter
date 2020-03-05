@@ -9,7 +9,7 @@
 		<link rel="icon" type="image/x-icon" href="img/but/favicon.ico" />
 		<link rel="shortcut icon" type="image/x-icon" href="img/but/favicon.ico" />
 		
-		<title>Upload Tenon Images</title>
+		<title>Upload Miter Images</title>
 		
 	</head>
 	
@@ -25,7 +25,7 @@
 				$file_name = stripslashes($file_name);
 				$file_name = str_replace("'","",$file_name);
 				
-				$copy = copy($_FILES['uploadFile'. $i]['tmp_name'],"../img/".$file_name);
+				$copy = copy($_FILES['uploadFile'. $i]['tmp_name'],"../upl/".$file_name);
 				
 				// prompt
 				if ($copy) {

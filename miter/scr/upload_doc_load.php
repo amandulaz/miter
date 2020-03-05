@@ -9,7 +9,7 @@
 		<link rel="icon" type="image/x-icon" href="img/but/favicon.ico" />
 		<link rel="shortcut icon" type="image/x-icon" href="img/but/favicon.ico" />
 		
-		<title>Upload Files</title>
+		<title>Upload Tenon Files</title>
 		
 	</head>
 	
