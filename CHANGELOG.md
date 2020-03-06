@@ -1,3 +1,7 @@
+**351019**  
+added upload miter images to upload(s) src/  
+index.css styling updates
+
 **349019**  
 fixed scr/panels_edit.php write 
 
