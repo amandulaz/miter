@@ -28,18 +28,18 @@
 						$array_pos = $i - 1;
 						
 						echo "<tr><td align='left'><span class='tenon'>" . $i++ . ". <a href='index.php?u=panels&p=" . $panel_item_line . "'>" . substr($panel_adj_title, 0, 30) . "</a></span>";
-						echo "</td><td align='right'><span class='name'><a href='scr/panels_delete.php?p=" . $panel_item_line . "' onclick='return confirm_delete()'><img src='but/delete.jpg' class='button_side'></a>&nbsp;&nbsp;&nbsp;";
+						echo "</td><td align='right'><span class='name'>";
 						if ($array_pos == '0') {
-							echo "<img src='but/up.jpg' class='button_side'>&nbsp;&nbsp;&nbsp;";
+							echo "<img src='but/up.jpg' class='button_side' style='opacity:0.5;'>&nbsp;&nbsp;&nbsp;&nbsp;";
 							} else {
-							echo "<a href='scr/panels_up.php?p=" . $array_pos . "'><img src='but/up.jpg' class='button_side'></a>&nbsp;&nbsp;&nbsp;";
+							echo "<a href='scr/panels_up.php?p=" . $array_pos . "'><img src='but/up.jpg' class='button_side'></a>&nbsp;&nbsp;&nbsp;&nbsp;";
 						}
 						if ($array_pos == $count_panels) {
-							echo "<img src='but/down.jpg' class='button_side'>";
+							echo "<img src='but/down.jpg' class='button_side' style='opacity:0.5;'>&nbsp;&nbsp;&nbsp;&nbsp;";
 							} else {
-							echo "<a href='scr/panels_down.php?p=" . $array_pos . "'><img src='but/down.jpg' class='button_side'></a>";
+							echo "<a href='scr/panels_down.php?p=" . $array_pos . "'><img src='but/down.jpg' class='button_side'></a>&nbsp;&nbsp;&nbsp;&nbsp;";
 						}
-						echo "</span>";
+						echo "<a href='scr/panels_delete.php?p=" . $panel_item_line . "' onclick='return confirm_delete()'><img src='but/delete.jpg' class='button_side'></a></span>";
 						echo "</td></tr>";
 					}
 				?>
