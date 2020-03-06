@@ -1,5 +1,6 @@
 **351019**  
 added upload miter images to upload(s) src/  
+moved panel edit to name links  
 index.css styling updates
 
 **349019**  
