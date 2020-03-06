@@ -27,9 +27,8 @@
 						$panel_adj_title = str_replace("_", " ", $panel_item_title);
 						$array_pos = $i - 1;
 						
-						echo "<tr><td align='left'><span class='tenon'>" . $i++ . ". " . substr($panel_adj_title, 0, 30) . "</span>";
-						echo "</td><td align='right'><span class='name'><a href='index.php?u=panels&p=" . $panel_item_line . "'><img src='but/edit.jpg' class='button_side'></a>&nbsp;&nbsp;&nbsp;";
-						echo "<a href='scr/panels_delete.php?p=" . $panel_item_line . "' onclick='return confirm_delete()'><img src='but/delete.jpg' class='button_side'></a>&nbsp;&nbsp;&nbsp;";
+						echo "<tr><td align='left'><span class='tenon'>" . $i++ . ". <a href='index.php?u=panels&p=" . $panel_item_line . "'>" . substr($panel_adj_title, 0, 30) . "</a></span>";
+						echo "</td><td align='right'><span class='name'><a href='scr/panels_delete.php?p=" . $panel_item_line . "' onclick='return confirm_delete()'><img src='but/delete.jpg' class='button_side'></a>&nbsp;&nbsp;&nbsp;";
 						if ($array_pos == '0') {
 							echo "<img src='but/up.jpg' class='button_side'>&nbsp;&nbsp;&nbsp;";
 							} else {
