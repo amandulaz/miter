@@ -1,3 +1,6 @@
+**359019**  
+repaired cor/pin.php hashtag error  
+
 **351019**  
 added upload miter images to upload(s) src/  
 moved panel edit to name links  
