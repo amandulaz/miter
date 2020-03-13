@@ -22,7 +22,7 @@
 	$pin = preg_replace_callback('@(https?://([-\w\.]+)+(:\d+)?(/([-\w/_\.]*(\?\S+)?)?)?)@', function($p) { return '<a href="'.$p[1].'" target="_blank">'.substr($p[1], 0, 30).'...</a>'; }, $pin);
 	
 	// hash tag
-	$pin = preg_replace('/(?<!\S)#([0-9a-zA-Z]+)/m', '<a href="index.php?q=$1">#$1</a>', $pin);
+	$pin = preg_replace('/(?<!\w)#([0-9a-zA-Z]+)/m', '<a href="index.php?q=$1">#$1</a>', $pin);
 	
 	// bbcode
 	$pin = preg_replace('#\[b\](.*?)\[/b\]#','<b>$1</b>', $pin);
