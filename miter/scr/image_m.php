@@ -8,7 +8,8 @@
 		// $bytes /= pow(1024, $pow);
 		return round($bytes, $precision) . ' ' . $units[$pow]; 
 	} 
-?>	
+?>
+
 <table class='static_header'>
 	<tr>
 		<td class='static_header_td'>
@@ -24,6 +25,12 @@
 			<table style='width:100%;padding:0;margin:0;border:0px solid #fff;'>
 				
 				<?	
+					if(isMobile()) {
+						$char_count = 25;
+						} else {
+						$char_count = 45;
+					}
+					
 					$i = 1;
 					$file_list = glob("upl/*.*");
 					foreach($file_list as $file_name) {
@@ -31,7 +38,7 @@
 						$file_loc = "upl/" . $file_name;
 						$file_size = filesize($file_loc);
 						
-						echo "<tr><td align='left'><span class='tenon'>" . $i++ . ". <a href='upl/" . $file_name . "' target='_blank'>" . substr($file_name, 0, 25) . "</a></span>";
+						echo "<tr><td align='left'><span class='tenon'>" . $i++ . ". <a href='upl/" . $file_name . "' target='_blank'>" . substr($file_name, 0, $char_count) . "</a></span>";
 						echo "</td><td align='right'><span class='name'>" . formatbytes($file_size) . " <a href='scr/delete_image_m.php?d=" . $file_name . "' onclick='return confirm_delete()'><img src='but/delete.jpg' class='button_side'></a></span>";
 						echo "</td></tr>";
 					}
