@@ -1,3 +1,6 @@
+**360019**  
+character count if(mobile) on file/image/archive lists
+
 **359019**  
 repaired cor/pin.php hashtag error  
 
