@@ -1,3 +1,6 @@
+**363019**  
+added greentext effect using > as symbol (4chan-ism)
+
 **360019**  
 character count if(mobile) on file/image/archive lists
 
