@@ -24,6 +24,12 @@
     $miter = preg_replace('#\[u\](.*?)\[/u\]#','<u>$1</u>', $miter);
     $miter = preg_replace('#\[s\](.*?)\[/s\]#','<s>$1</s>', $miter);
 	
+	// green text
+	if (substr($miter, 0, 3) == '&gt') {
+		$miter = preg_replace('/&gt;([^<]*)/m', '<span class="green_text">&gt;$1</span>', $miter, 1);
+	}
+	$miter = preg_replace('/<br \/>&gt;([^<]*)/m', '<br /><span class="green_text">&gt;$1</span>', $miter);
+	
     // table miter
     echo "<table class='last_table'>
 	<tr>
