@@ -231,8 +231,8 @@ a:hover {
 }
 
 
-
 /* Miter Embeds */
+
 
 .crop_img {
 	max-height:150px;
@@ -316,10 +316,13 @@ a:hover {
 	border-radius:5px;
 }
 
-
+.green_text {
+	color: #469546;
+}
 
 
 /* Miter Input Form */
+
 
 .miter_input {
 	width:100%;
@@ -890,7 +893,7 @@ pre {
 
 
 .settings_field {
-	width:100%;
+	width:90%;
 	font:normal 13px verdana;
 	color:#000000;
 	border-width:1px 1px 0px 1px;
@@ -906,7 +909,7 @@ pre {
 }
 
 .settings_dropdown {
-	width:100%;
+	width:90%;
 	font:normal 13px verdana;
 	color:#000000;
 	border-width:1px 1px 0px 1px;
@@ -922,7 +925,7 @@ pre {
 }
 
 .settings_field_file {
-	width:100%;
+	width:90%;
 	font:normal 13px verdana;
 	color:#000000;
 	border-width:0px;
@@ -936,7 +939,7 @@ pre {
 }
 
 .settings_submit {
-	width:100%;
+	width:90%;
 	border:1px solid #A5A5A5;
 	font:normal 13px verdana;
 	color:#222222;
@@ -948,12 +951,12 @@ pre {
 }
 
 .settings_submit_solo {
-	width:100%;
+	width:90%;
 	border:1px solid #A5A5A5;
 	font:normal 13px verdana;
 	color:#222222;
 	background:#EFEFEF;
-	padding:8px 0px 8px 0px;
+	padding:9px 0px 9px 0px;
 	text-align:center;
 	border-radius:5px;
 }
@@ -965,6 +968,7 @@ pre {
 	border:0pc solid #FFF;
 	border-spacing:0px;
 	border-collapse:separate;
+	text-align:center;
 }
 
 
