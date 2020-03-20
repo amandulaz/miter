@@ -1,3 +1,9 @@
+**001020**  
+cor/archive delete bug fix  
+settings page update(s)  
+deleted scr/delete_archive.php  
+replaced scr/delete_miter_archive.php
+
 **363019**  
 added greentext effect using > as symbol (4chan-ism)
 
