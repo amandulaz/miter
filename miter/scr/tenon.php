@@ -1,10 +1,18 @@
 <?
+	// time zone
+	$user_file = '../usr/user.xml';
+	$user_get = simplexml_load_file($user_file);
+	$user_array = json_decode(json_encode($user_get), 1);
+	$user_set = end($user_array['user']);
+	$user_time_zone = $user_set['time'];
+	date_default_timezone_set($user_time_zone);
+
 	// convert gregorian to otc
-	$hour = date("G");
+	$hour = date("H");
 	$min = date("i");
 	$sec = date("s");
 	
-	$day = date("z") + 1;
+	$day = date("z");
 	if ($day < 79) {
 		$final_day = $day + 287;
 		} else if ($day >= 79) {
@@ -22,9 +30,6 @@
 	
 	// print date
 	$o_date = ($hour . ":" . $min . ":" . $sec . " " . $final_day . " " . $zero_year); 
-	
-	// file date
-	$id_date = ($zero_year . "" . $final_day . "" . $hour . "" . $min . "" . $sec); 
 	
 	// gregorian date
 	$g_date = date("Y-m-d H:i:s");
@@ -61,7 +66,6 @@
 	$data_file = fopen($tenon_file, "w") or die("Error");
 	fwrite($data_file, $tenon_data);
 	fclose($data_file);
-	
 	
 	// load new page
 	header("location:../index.php?t=" . $title_to_file . "");
