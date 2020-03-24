@@ -57,8 +57,8 @@
 			<tr>
 			<td>
             <a href='' style='text-decoration:none;color:#808080;'>Next Page</a>
-            </tr>
 			</td>
+            </tr>
 			</table>";
 			} else {
 			$next_page = $start_page + $m_page_show;
@@ -66,8 +66,8 @@
 			<tr>
 			<td>
             <a href='index.php?page=" . $next_page . "' style='text-decoration:none;color:#000;'>Next Page</a>
-            </tr>
 			</td>
+            </tr>
 			</table>";
 		}
 		

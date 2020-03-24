@@ -101,7 +101,7 @@
 		<td class="menu_td">
 			<span class="tenon"><a href="dat/" target="_blank" style="color:#000;"><? echo number_format($miter_count); ?> miters</a><br />
 			<a href="index.php?a=" style="color:#000;"><? echo number_format($tenon_count); ?> tenons</a><br />
-			<? echo number_format($c_d_count); ?> views today</a></span>
+			<? echo number_format($c_d_count); ?> views today</span>
 		</td>
 	</tr>
 </table>
