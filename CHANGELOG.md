@@ -1,3 +1,7 @@
+**004020**  
+minor code corrections  
+index.php cor/miter cor/panels
+
 **001020**  
 cor/archive delete bug fix  
 settings page update(s)  
