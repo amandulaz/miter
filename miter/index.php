@@ -217,11 +217,11 @@
 				
 			?>
 			
-		</tr>
-	</td>
+		</td>
+	</tr>
 </table>
 
 </div>
 
 </body>
-</html>																				
+</html>
