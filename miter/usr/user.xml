@@ -3,7 +3,7 @@
   <user>
 </user>
   <user id="probe">
-    <name>@username</name>
+	<name>@username</name>
     <title>Title</title>
     <avatar></avatar>
     <bio>Miter-er</bio>
@@ -12,6 +12,7 @@
     <border>#bbbbbb</border>
     <link>#0000BB</link>
     <time>America/Chicago</time>
+	<email></email>
     <pin></pin>
   </user>
 </miter>
