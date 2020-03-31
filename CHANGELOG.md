@@ -1,3 +1,8 @@
+**011020**  
+change user settings page  
+add contact form (scr/setting scr/contact_form index.css cor/panels)  
+urgent --> update index.php and user.xml --> add <email></email>
+
 **004020**  
 minor code corrections  
 index.php cor/miter cor/panels
