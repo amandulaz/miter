@@ -383,7 +383,7 @@
 	<tr>
 		<td class='static_td'>
 			
-			<span class="tenon">Adding an email activates the contact form panel.</span>
+			<span class="tenon">Adding an email activates the contact form panel</span>
 			<div class='bump'></div>
 			<table class='setting_table'>
 				<tr>
