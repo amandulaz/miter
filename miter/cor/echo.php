@@ -6,6 +6,10 @@
     $last_tpimg = $arc[3]; // retired 59019 // repurpose
     $last_odate = $arc[4]; // otc date
     $last_gdate = $arc[5]; // gregorian date
+	
+	// permalink address build
+	$o_perm = str_replace('dat/','',$step_miter);
+	$o_perm = str_replace('.txt','',$o_perm);
     
     // strip html and php
     $miter = htmlspecialchars($last_data);
@@ -67,8 +71,9 @@
 		if (strpos($last_img, 'img/') !== false) {
 			$last_img = str_replace('img/','upl/',$last_img);
 		}
-		echo "<div class='crop_img'>
-		<a href='" . $last_img . "' target='_blank'><img src='" . $last_img . "' class='embed_img'></a>
+		echo "<div class='crop_container'>
+		<div class='crop_img'><a href='" . $last_img . "' target='_blank'><img src='" . $last_img . "' class='embed_img'></a></div>
+		<div class='crop_expand'><a href='index.php?miter=" . $o_perm . "' class='permalink' style='color:silver;'>Expand</a></div>
 		</div>";
 		echo "<div class='space_img_bot'></div>";
 	}
@@ -115,14 +120,25 @@
 				echo "<div class='space_img_bot'></div>";
 			}
 			
+			// twitter
+			} else if (strpos($last_link, 'twitter.com/') !== false) {
+			if (strlen($last_img) !== 0) { // null
+				} else {
+				// credit -> twitframe.com -> need esc
+				$twit_rand = rand(47, 69);
+				echo "<iframe id='tweet_" . $twit_rand . "' border='0' frameborder='0' height='250' width='100%' src='https://twitframe.com/show?url=" . $last_link . "'></iframe>";
+				echo "<div class='space_img_bot'></div>";
+			}
+			
 			// image
 			} else if (strpos($last_link, '.jpg') !== false || strpos($last_link, '.jpeg') !== false || strpos($last_link, '.png') !== false || strpos($last_link, '.gif') !== false || strpos($last_link, '.svg') !== false) {
 			
 			// upload then no image
 			if (strlen($last_img) !== 0) { // null
 				} else {
-				echo "<div class='crop_img'>
-				<a href='" . $last_link . "' target='_blank'><img src='" . $last_link . "' class='embed_img'></a>
+				echo "<div class='crop_container'>
+				<div class='crop_img'><a href='" . $last_link . "' target='_blank'><img src='" . $last_link . "' class='embed_img'></a></div>
+				<div class='crop_expand'><a href='index.php?miter=" . $o_perm . "' class='permalink' style='color:silver;'>Expand</a></div>
 				</div>";
 				echo "<div class='space_img_bot'></div>";
 			}
@@ -191,8 +207,6 @@
 	echo "<div class='space_permalink'></div>";
 	
 	// permalink date
-	$o_perm = str_replace('dat/','',$step_miter);
-	$o_perm = str_replace('.txt','',$o_perm);
 	echo "<a href='index.php?miter=" . $o_perm . "' class='permalink' style='color:silver;'>" . $last_odate . "</a><br />";
 	
 	// footer

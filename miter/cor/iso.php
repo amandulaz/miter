@@ -120,6 +120,16 @@
 				echo "<div class='space_img_bot'></div>";
 			}
 			
+			// twitter
+			} else if (strpos($last_link, 'twitter.com/') !== false) {
+			if (strlen($last_img) !== 0) { // null
+				} else {
+				// credit -> twitframe.com -> need esc
+				$twit_rand = rand(47, 69);
+				echo "<iframe id='tweet_" . $twit_rand . "' border='0' frameborder='0' height='250' width='100%' src='https://twitframe.com/show?url=" . $last_link . "'></iframe>";
+				echo "<div class='space_img_bot'></div>";
+			}
+			
 			// image
 			} else if (strpos($last_link, '.jpg') !== false || strpos($last_link, '.jpeg') !== false || strpos($last_link, '.png') !== false || strpos($last_link, '.gif') !== false || strpos($last_link, '.svg') !== false) {
 			
