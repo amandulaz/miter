@@ -1,3 +1,8 @@
+**041020**  
+added textarea autosize.js
+added/replaced placeholders to fields
+added contact form --> [beta]
+
 **011020**  
 change user settings page  
 add contact form (scr/setting scr/contact_form index.css cor/panels)  
