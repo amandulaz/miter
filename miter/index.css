@@ -234,9 +234,28 @@ a:hover {
 /* Miter Embeds */
 
 
+.crop_container {
+	position:relative;
+	text-align:center;
+}
+
 .crop_img {
 	max-height:150px;
 	overflow:hidden;
+}
+
+.crop_expand {
+	position:absolute;
+	bottom:0px;
+	right:0px;
+	font:normal 10px verdana;
+	background-color:#fff;
+	border:0px solid #fff;
+	color:#000000;
+	text-align:center;
+	padding:7px 12px 4px 14px;
+	margin:0;
+	border-top-left-radius:5px;
 }
 
 .embed_img {
@@ -326,14 +345,15 @@ a:hover {
 
 .miter_input {
 	width:100%;
-	height:130px;
+	height:50px;
 	border:0px solid #C5C5C5;
 	font:normal 15px verdana;
 	background-color:#FFF;
 	padding:7px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	outline:none;
 	border-top-left-radius:5px;
 	border-top-right-radius:5px;
 }
@@ -441,9 +461,10 @@ a:hover {
 	border:1px solid #D5D5D5;
 	padding:8px 8px 8px 8px;
 	background-color:#FFF;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	outline:none;
 	border-radius:5px;
 }
 
@@ -504,7 +525,7 @@ a:hover {
 
 
 
-/* Static */
+/* Tenon */
 
 .static_header {
 	width:100%;
@@ -604,8 +625,8 @@ img {
 
 
 
-
 /* Tenon Font */
+
 
 .highlight {
 	background-color:#FFFFCC;
@@ -659,15 +680,17 @@ pre {
 
 .tenon_input {
 	width:100%;
-	height:350px;
+	height:100px;
+	max-height:500px;
 	border:0px solid #FFF;
 	font:normal 13px verdana;
 	background-color:#FFF;
 	padding:6px 12px 6px 12px;
 	margin:0;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	outline:none;
 	border-spacing:0px;
 	border-collapse:separate;
 }
@@ -761,9 +784,10 @@ pre {
 	border:1px solid #A5A5A5;
 	padding:6px 8px 6px 8px;
 	background-color:#FFF;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	outline:none;
 	border-radius:5px;
 }
 
@@ -808,9 +832,10 @@ pre {
 	border-color:#A5A5A5;
 	padding:6px 8px 6px 8px;
 	background-color:#FFF;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	outline:none;
 	border-top-left-radius:5px;
 	border-bottom-left-radius:5px;
 }
@@ -833,7 +858,7 @@ pre {
 
 
 
-/* Menu */
+/* Panels */
 
 
 .menu_header {
@@ -901,9 +926,10 @@ pre {
 	border-color:#A5A5A5;
 	padding:8px 8px 8px 8px;
 	background-color:#FFF;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	outline:none;
 	border-top-left-radius:5px;
 	border-top-right-radius:5px;
 }
@@ -916,9 +942,10 @@ pre {
 	border-color:#A5A5A5;
 	padding:3px 5px 3px 5px;
 	background-color:#FFF;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	outline:none;
 	border-top-left-radius:5px;
 	border-top-right-radius:5px;
 }
@@ -933,9 +960,10 @@ pre {
 	border-color:#A5A5A5;
 	padding:8px 8px 8px 8px;
 	background-color:#FFF;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	outline:none;
 	border-top-left-radius:5px;
 	border-top-right-radius:5px;
 }
@@ -949,9 +977,10 @@ pre {
 	border-color:#A5A5A5;
 	padding:8px 8px 8px 0px;
 	background-color:#FFF;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	outline:none;
 }
 
 .settings_submit {
@@ -1044,4 +1073,52 @@ hr {
 	height:12px;
 	border:0px solid #FFF;
 	vertical-align:text-top;
+}
+
+/* Contact Form */
+
+.contact_field {
+	width:100%;
+	font:normal 13px verdana;
+	color:#555555;
+	border-width:1px;
+	border-style:solid;
+	border-color:#A5A5A5;
+	padding:7px;
+	margin:0;
+	background-color:#FFF;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	outline:none;
+	border-radius:3px;
+}
+
+.contact_textarea {
+	width:100%;
+	height:100px;
+	font:normal 13px verdana;
+	color:#555555;
+	border-width:1px;
+	border-style:solid;
+	border-color:#A5A5A5;
+	padding:7px;
+	margin:0;
+	background-color:#FFF;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	outline:none;
+	border-radius:3px;
+}
+
+.contact_submit {
+	width:100%;
+	border:1px solid #A5A5A5;
+	font:normal 13px verdana;
+	color:#222222;
+	background:#EFEFEF;
+	padding:8px 0px 8px 0px;
+	text-align:center;
+	border-radius:3px;
 }

@@ -18,6 +18,7 @@
 		<link href="index.css" rel="stylesheet">
 		
 		<?
+//		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 			
 			// user data
 			$user_file = 'usr/user.xml';
