@@ -55,7 +55,10 @@
 				</td>
 			</tr>
 		</table>
-		
+
+	<script src='scr/autosize.js'></script>
+	<script> autosize(document.querySelectorAll('textarea')); </script>
+
 	</form>
 	
 <script src="scr/form.js"></script>	

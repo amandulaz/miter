@@ -16,7 +16,7 @@
 					<tr>
 						<td class="title_td">
 							
-							<input id="title" name="title" class="title_field" value="" required>
+							<input id="title" name="title" class="title_field" value="" placeholder="Title" required>
 							
 						</td>
 					</tr>
@@ -26,7 +26,7 @@
 					<tr>
 						<td class="input_td">
 							
-							<textarea id="tenon" name="tenon" class="tenon_input"></textarea>
+							<textarea id="tenon" name="tenon" class="tenon_input" placeholder="Content"></textarea>
 							
 						</td>
 					</tr>
@@ -47,7 +47,10 @@
 			</td>
 		</tr>
 	</table>        
-	
+
+	<script src='scr/autosize.js'></script>
+	<script> autosize(document.querySelectorAll('textarea')); </script>
+
 </form>
 
 <script src="scr/form.js"></script>	

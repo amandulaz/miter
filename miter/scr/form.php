@@ -31,7 +31,7 @@
 				
 				<form name="miterform" id="miterform" action="scr/<? if (strlen($edit_last_id) != 0) { echo 'replace.php'; } else { echo 'miter.php'; } ?>" method="POST" enctype="multipart/form-data" onsubmit="return validate()">
 					
-					<textarea id="miter" name="miter" class="miter_input" maxlength="260" onkeyup="limiter();"><? echo $edit_last_text; ?></textarea>
+					<textarea id="miter" name="miter" class="miter_input" maxlength="260" onkeyup="limiter();" placeholder="Bring the lumber!"><? echo $edit_last_text; ?></textarea>
 					
 					<table class="sub_button_table">
 						<tr>
@@ -58,7 +58,7 @@
 										echo "<input id='url' name='url' class='miter_url_field' value='" . $quote_id . "'>";
 										} else {
 									?>
-									<input id="url" name="url" class="miter_url_field" value="Link, Image or Video:" onfocus="(this.value == 'Link, Image or Video:') && (this.value = '')" onblur="(this.value == '') && (this.value = 'Link, Image or Video:')">
+									<input id="url" name="url" class="miter_url_field" value="" placeholder="Link, Image or Video">
 									<?
 									}
 								?>
@@ -85,6 +85,9 @@
 							</td>
 						</tr>
 					</table>
+					
+					<script src='scr/autosize.js'></script>
+					<script> autosize(document.querySelectorAll('textarea')); </script>
 					
 				</form>
                 

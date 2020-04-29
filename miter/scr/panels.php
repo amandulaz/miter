@@ -94,7 +94,7 @@
 				<table class="title_table">
 					<tr>
 						<td class="title_td">
-							<input id="title" name="title" class="title_field" value="<?
+							<input id="title" name="title" class="title_field" placeholder="Title" value="<?
 								if (isset($_GET['p'])) {
 									echo $panel_fill_title;
 								}
@@ -106,7 +106,7 @@
 				<table class="input_table">
 					<tr>
 						<td class="input_td">
-							<textarea id="panel" name="panel" class="tenon_input"><?
+							<textarea id="panel" name="panel" class="tenon_input" placeholder="Content"><?
 								if (isset($_GET['p'])) {
 									include $panel_addy;
 								}
@@ -165,6 +165,9 @@
 			</td>
 		</tr>
 	</table>
+	
+	<script src='scr/autosize.js'></script>
+	<script> autosize(document.querySelectorAll('textarea')); </script>
 	
 </form>
 
