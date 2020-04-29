@@ -1,7 +1,8 @@
 **041020**  
 added textarea autosize.js  
 added/replaced placeholders to fields  
-added contact form --> [beta]
+added contact form --> [beta]  
+added twitter embed via twitframe
 
 **011020**  
 change user settings page  
