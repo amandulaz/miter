@@ -1,6 +1,6 @@
 **041020**  
-added textarea autosize.js
-added/replaced placeholders to fields
+added textarea autosize.js  
+added/replaced placeholders to fields  
 added contact form --> [beta]
 
 **011020**  
