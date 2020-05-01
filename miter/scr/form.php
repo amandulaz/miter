@@ -31,7 +31,7 @@
 				
 				<form name="miterform" id="miterform" action="scr/<? if (strlen($edit_last_id) != 0) { echo 'replace.php'; } else { echo 'miter.php'; } ?>" method="POST" enctype="multipart/form-data" onsubmit="return validate()">
 					
-					<textarea id="miter" name="miter" class="miter_input" maxlength="260" onkeyup="limiter();" placeholder="Bring the lumber!"><? echo $edit_last_text; ?></textarea>
+					<textarea id="miter" name="miter" class="miter_input" maxlength="260" onkeyup="limiter();" placeholder="Bring the lumber..."><? echo $edit_last_text; ?></textarea>
 					
 					<table class="sub_button_table">
 						<tr>
