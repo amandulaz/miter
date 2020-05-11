@@ -111,6 +111,15 @@ a:hover {
 /* Profile */
 
 
+.subscribe_header {
+	width:100%;
+	border-width:0px solid #fff;
+	margin:0;
+	padding:0;
+	border-spacing:0px;
+	border-collapse:separate;
+}
+
 .profile_table {
 	width:100%;
 	border:0px solid #fff;
@@ -202,8 +211,8 @@ a:hover {
 }
 
 .button_side {
-	width:13px;
-	height:13px;
+	width:15px;
+	height:15px;
 	border:0px solid #FFF;
 }
 
@@ -245,17 +254,17 @@ a:hover {
 }
 
 .crop_expand {
+	width:100%;
 	position:absolute;
 	bottom:0px;
 	right:0px;
 	font:normal 10px verdana;
-	background-color:#fff;
+	background-color:#efefef;
 	border:0px solid #fff;
 	color:#000000;
 	text-align:center;
-	padding:7px 12px 4px 14px;
+	padding:6px 0px 6px 0px;
 	margin:0;
-	border-top-left-radius:5px;
 }
 
 .embed_img {
