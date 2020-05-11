@@ -177,17 +177,19 @@ a:hover {
 }
 
 .profile_td_bottom {
+	font:normal 13px Verdana;
+	background-color:#efefef;
 	padding:8px 14px 8px 14px;
 	margin:0;
-	font:normal 13px Verdana;
 	color:#000000;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
 }
 
 .subscribe_table {
 	width:100%;
 	font:normal 13px verdana;
 	border:0px solid #fff;
-	background-color:#fff;
 	margin:0;
 	padding:0;
 	border-spacing:0px;
@@ -301,20 +303,25 @@ a:hover {
 
 
 .crop_container {
-	position:relative;
+  width:100%;
+  max-height:150px;
+  cursor:pointer;
+  overflow:hidden;
+}
+
+.crop_container img {
+	width:100%;
 	text-align:center;
 }
 
-.crop_img {
-	max-height:150px;
-	overflow:hidden;
+.crop_container.expanded {
+	max-height:initial;
 }
 
 .crop_expand {
 	width:100%;
-	position:absolute;
-	bottom:0px;
-	right:0px;
+	position:relative;
+	top:0px;
 	font:normal 10px verdana;
 	background-color:#efefef;
 	border:0px solid #fff;
@@ -554,9 +561,8 @@ a:hover {
 }
 
 
-
-
 /* Login */
+
 
 .space_buttons {
 	width:100%;
@@ -631,8 +637,19 @@ a:hover {
 	border-bottom-right-radius:5px;
 }
 
+.static_table_no_title {
+	width:100%;
+	border:1px solid #b2aba3;
+	background-color:#FFF;
+	margin:0;
+	padding:0;
+	border-spacing:0px;
+	border-collapse:separate;
+	border-radius:5px;
+}
+
 .static_td {
-	padding:14px 14px 13px 14px;
+	padding:14px 14px 14px 14px;
 	margin:0;
 	overflow-wrap:anywhere;
 	word-wrap:normal;
