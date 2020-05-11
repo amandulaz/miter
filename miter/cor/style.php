@@ -40,6 +40,14 @@ border-color:<? echo $user_border; ?>;
 border-color:<? echo $user_border; ?>;
 }
 
+.profile_panel_top {
+border-color:<? echo $user_border; ?>;
+}
+
+.profile_panel_bottom {
+border-color:<? echo $user_border; ?>;
+}
+
 .next_page {
 background-color:<? echo $user_header; ?>;
 border-color:<? echo $user_border; ?>;
