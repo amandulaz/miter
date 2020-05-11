@@ -27,6 +27,10 @@ border-color:<? echo $user_border; ?>;
 border-color:<? echo $user_border; ?>;
 }
 
+.static_table_no_title {
+border-color:<? echo $user_border; ?>;
+}
+
 .menu_header {
 background-color:<? echo $user_header; ?>;
 border-color:<? echo $user_border; ?>;

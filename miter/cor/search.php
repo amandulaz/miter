@@ -53,7 +53,37 @@
 	
 	krsort($miter_found);
 	$miter_files = count($miter_found);
-	
+
+	if (strlen($search_get) !== 0) {
+?>
+
+<table class='static_table_no_title'>
+	<tr>
+		<td class='static_td' align='right'>
+			<span class='tenon'><b><? echo $miter_files; ?></b> results for "<? echo $search_get; ?>"</span>
+		</td>
+	</tr>
+</table>
+
+<?
+	} else {
+?>
+
+<table class='static_table_no_title'>
+	<tr>
+		<td class='static_td' align='right'>
+			<span class='tenon'>No search results</span>
+		</td>
+	</tr>
+</table>
+
+<?
+	}
+?>
+
+<div class='bump'></div>
+
+<?
 	// miter print
 	$miter_print_arc = array_slice($miter_found, $start_page, $m_page_show, true);
 	
@@ -85,15 +115,6 @@
 		}
 		
 		} else {
-		
-		echo "<table class='static_table'>
-		<tr>
-		<td class='static_td'>
-		<span class='tenon'>No results found.";
-		echo "</span>
-		</td>
-		</tr>
-		</table>";
-		
-	}	
+	
+	}
 ?>
