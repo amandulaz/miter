@@ -73,7 +73,7 @@
 		}
 		echo "<div class='crop_container'>
 		<div class='crop_img'><a href='" . $last_img . "' target='_blank'><img src='" . $last_img . "' class='embed_img'></a></div>
-		<div class='crop_expand'><a href='index.php?miter=" . $o_perm . "' class='permalink' style='color:silver;'>Expand</a></div>
+		<div class='crop_expand'><a href='index.php?miter=" . $o_perm . "' class='permalink' style='color:silver;'>&#9660; Expand &#9660;</a></div>
 		</div>";
 		echo "<div class='space_img_bot'></div>";
 	}
@@ -138,7 +138,7 @@
 				} else {
 				echo "<div class='crop_container'>
 				<div class='crop_img'><a href='" . $last_link . "' target='_blank'><img src='" . $last_link . "' class='embed_img'></a></div>
-				<div class='crop_expand'><a href='index.php?miter=" . $o_perm . "' class='permalink' style='color:silver;'>Expand</a></div>
+				<div class='crop_expand'><a href='index.php?miter=" . $o_perm . "' class='permalink' style='color:silver;'>&#9660; Expand &#9660;</a></div>
 				</div>";
 				echo "<div class='space_img_bot'></div>";
 			}
@@ -164,6 +164,8 @@
 			$quote = preg_replace('#\[i\](.*?)\[/i\]#','<i>$1</i>', $quote);
 			$quote = preg_replace('#\[u\](.*?)\[/u\]#','<u>$1</u>', $quote);
 			$quote = preg_replace('#\[s\](.*?)\[/s\]#','<s>$1</s>', $quote);
+			if (substr($quote, 0, 3) == '&gt') { $quote = preg_replace('/&gt;([^<]*)/m', '<span class="green_text">&gt;$1</span>', $quote, 1); }
+			$quote = preg_replace('/<br \/>&gt;([^<]*)/m', '<br /><span class="green_text">&gt;$1</span>', $quote);
 			$quote_page_contents = file_get_contents($last_link);
 			preg_match("/<title>(.+)<\/title>/i",$quote_page_contents,$quote_username);
 			$quote_username = str_replace('Miter -','',$quote_username[1]);

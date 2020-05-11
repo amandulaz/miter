@@ -86,30 +86,6 @@
 	// view counter
 	include('cor/c_day.php');
 
-	// contact form
-	if (strlen($user_email) !== 0) {
-?>
-
-<table class="menu_header">
-	<tr>
-		<td class="menu_header_td">
-			<span class="title">Contact</span>
-		</td>
-	</tr>
-</table>
-
-<table class="menu_table">
-	<tr>
-		<td class="menu_td">
-			<? include 'cor/contact.php'; ?>
-		</td>
-	</tr>
-</table>
-
-<div class="bump"></div>
-
-<?
-	}
 ?>
 
 <table class="menu_header">

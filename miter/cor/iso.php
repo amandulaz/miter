@@ -161,6 +161,8 @@
 			$quote = preg_replace('#\[i\](.*?)\[/i\]#','<i>$1</i>', $quote);
 			$quote = preg_replace('#\[u\](.*?)\[/u\]#','<u>$1</u>', $quote);
 			$quote = preg_replace('#\[s\](.*?)\[/s\]#','<s>$1</s>', $quote);
+			if (substr($quote, 0, 3) == '&gt') { $quote = preg_replace('/&gt;([^<]*)/m', '<span class="green_text">&gt;$1</span>', $quote, 1); }
+			$quote = preg_replace('/<br \/>&gt;([^<]*)/m', '<br /><span class="green_text">&gt;$1</span>', $quote);
 			$quote_page_contents = file_get_contents($last_link);
 			preg_match("/<title>(.+)<\/title>/i",$quote_page_contents,$quote_username);
 			$quote_username = str_replace('Miter -','',$quote_username[1]);
