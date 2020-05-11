@@ -1,3 +1,11 @@
+**052020**  
+error quote green text  
+error pin green text  
+panel improvements  
+subscription being added  
+contact removed  
+style mods added
+
 **041020**  
 added textarea autosize.js  
 added/replaced placeholders to fields  
