@@ -1,3 +1,9 @@
+**054020**  
+added expanding image crop onclick to feed  
+(credit: https://stackoverflow.com/users/6193316/ufgufugullu)  
+profile.php modifided  
+index.css modified
+
 **052020**  
 error quote green text  
 error pin green text  
