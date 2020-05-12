@@ -309,26 +309,13 @@ a:hover {
   overflow:hidden;
 }
 
-.crop_container img {
-	width:100%;
-	text-align:center;
-}
-
 .crop_container.expanded {
 	max-height:initial;
 }
 
-.crop_expand {
+.crop_container img {
 	width:100%;
-	position:relative;
-	top:0px;
-	font:normal 10px verdana;
-	background-color:#efefef;
-	border:0px solid #fff;
-	color:#000000;
 	text-align:center;
-	padding:6px 0px 6px 0px;
-	margin:0;
 }
 
 .embed_img {
