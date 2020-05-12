@@ -1,3 +1,12 @@
+<script>
+	$(document).ready(function() {
+		$('.crop_container').on('click', toggleImage);
+		function toggleImage(event) {
+			$(event.target).closest('.crop_container').toggleClass('expanded');
+		}
+	});
+</script>
+
 <?
 	$search_get = $_GET['q'];
 	

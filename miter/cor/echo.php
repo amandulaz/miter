@@ -1,12 +1,3 @@
-<script>
-	$(document).ready(function() {
-		$('.crop_container').on('click', toggleImage);
-		function toggleImage(event) {
-			$(event.target).closest('.crop_container').toggleClass('expanded');
-		}
-	});
-</script>
-
 <?
 	
     $last_data  = $arc[0]; // miter
@@ -80,9 +71,7 @@
 		if (strpos($last_img, 'img/') !== false) {
 		$last_img = str_replace('img/','upl/',$last_img);
 		}
-		echo "<div class='crop_container'><img src='" . $last_img . "'>
-		<div class='crop_expand'><span class='permalink' style='color:silver;'>&#9660; Expand &#9660;</span>
-		</div></div>";
+		echo "<div class='crop_container'><img src='" . $last_img . "'></div>";
 		echo "<div class='space_img_bot'></div>";
 		}
 		
@@ -144,9 +133,7 @@
 		// upload then no image
 		if (strlen($last_img) !== 0) { // null
 		} else {
-		echo "<div class='crop_container'><img src='" . $last_link . "'>
-		<div class='crop_expand'><span class='permalink' style='color:silver;'>&#9660; Expand &#9660;</span>
-		</div></div>";
+		echo "<div class='crop_container'><img src='" . $last_link . "'></div>";
 		echo "<div class='space_img_bot'></div>";
 		}
 		
