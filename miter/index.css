@@ -307,7 +307,7 @@ a:hover {
   max-height:150px;
   cursor:pointer;
   overflow:hidden;
-  margin:5px 0px -1px 0px;
+  margin:6px 0px -1px 0px;
 }
 
 .crop_container.expanded {
@@ -322,13 +322,13 @@ a:hover {
 .embed_img {
 	border:0px solid #FFF;
 	padding:0;
-	margin:5px 0px -1px 0px;
+	margin:6px 0px -1px 0px;
 	max-width:100%;
 }
 
 .embed_yt_iso {
 	padding:0;
-	margin:5px 0px 4px 0px;
+	margin:6px 0px 4px 0px;
 	position:relative;
 	width:100%;
 	height:0;
@@ -337,7 +337,7 @@ a:hover {
 
 .embed_yt {
 	padding:0;
-	margin:5px 0px 0px 0px;
+	margin:6px 0px 0px 0px;
 	position:relative;
 	width:100%;
 	height:0;
@@ -354,7 +354,7 @@ a:hover {
 
 .embed_video {
 	padding:0;
-	margin:5px 0px 0px 0px;
+	margin:6px 0px 0px 0px;
 	position:relative;
 	width:100%;
 	height:0;
