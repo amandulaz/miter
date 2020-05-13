@@ -307,6 +307,7 @@ a:hover {
   max-height:150px;
   cursor:pointer;
   overflow:hidden;
+  margin:5px 0px -1px 0px;
 }
 
 .crop_container.expanded {
