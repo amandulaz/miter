@@ -298,41 +298,6 @@
 <table class='static_header'>
 	<tr>
 		<td class='static_header_td'>
-			<span class='title'>Contact Form</span>
-		</td>
-	</tr>
-</table>
-
-<table class='static_table'>
-	<tr>
-		<td class='static_td'>
-			
-			<span class="tenon">Adding an email activates the contact form panel</span>
-			<div class='bump'></div>
-			<table class='setting_table'>
-				<tr>
-					<td>
-						<form name="miter_contact_form" action="scr/contact_form.php" method="POST">
-						<input type="email" id="miter_contact_form" name="miter_contact_form" class="settings_field" value="<? 
-							echo $user_email;
-							?>">
-							<input type="submit" name="user_submit" value="Change Email" class="settings_submit">
-						</form>
-					</td>
-				</tr>
-			</table>			
-			
-		</td>
-	</tr>
-</table>
-
-
-<div class='bump'></div>
-
-
-<table class='static_header'>
-	<tr>
-		<td class='static_header_td'>
 			<span class='title'>Data</span>
 		</td>
 	</tr>
