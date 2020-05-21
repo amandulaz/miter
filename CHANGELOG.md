@@ -1,3 +1,6 @@
+**063020**  
+killed contact form and contact settings
+
 **054020**  
 added expanding image crop onclick to feed  
 (credit: https://stackoverflow.com/users/6193316/ufgufugullu)  
