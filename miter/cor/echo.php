@@ -17,7 +17,7 @@
     $miter = str_replace('&lt;br /&gt;','<br />',$miter);
 	
     // links
-    $miter = preg_replace_callback('@(https?://([-\w\.]+)+(:\d+)?(/([-\w/_\.]*(\?\S+)?)?)?)@', function($m) { return '<a href="'.$m[1].'" target="_blank">'.substr($m[1], 0, 30).'...</a>'; }, $miter);
+    $miter = preg_replace_callback('@(https?://([-\w\.]+)+(:\d+)?(/([-\w/_\.]*(\?\S+)?)?)?)@', function($m) { return '<a href="'.$m[1].'" target="_blank">'.substr($m[1], 0, 30).'</a>'; }, $miter);
 	
     // hash tag
     $miter = preg_replace('/(?<!\w)#([0-9a-zA-Z]+)/m', '<a href="index.php?q=$1">#$1</a>', $miter);
@@ -114,16 +114,6 @@
 		echo "<div class='embed_video'>
 		<video class='video_miter' controls><source src='" . $last_link ."' type='video/webm'></video>
 		</div>";
-		echo "<div class='space_img_bot'></div>";
-		}
-		
-		// twitter
-		} else if (strpos($last_link, 'twitter.com/') !== false) {
-		if (strlen($last_img) !== 0) { // null
-		} else {
-		// credit -> twitframe.com -> need esc
-		$twit_rand = rand(47, 69);
-		echo "<iframe id='tweet_" . $twit_rand . "' border='0' frameborder='0' height='250' width='100%' src='https://twitframe.com/show?url=" . $last_link . "'></iframe>";
 		echo "<div class='space_img_bot'></div>";
 		}
 		
