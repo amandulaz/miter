@@ -35,7 +35,6 @@
 			$user_link =      $user_array[0]->link;
 			$user_tz =        $user_array[0]->time;
 			$user_pin =       $user_array[0]->pin;
-			$user_email = 	  $user_array[0]->email;
 			date_default_timezone_set($user_tz);
 			
 			// logged in?
