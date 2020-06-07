@@ -21,7 +21,7 @@
 		$feed_print .= "<subtitle>" . $user_bio . "</subtitle>";
 		$feed_print .= "<link href='http://" . $serv_name . "/cor/atom.php' rel='self' />";
 		$feed_print .= "<id>http://" . $serv_name . "/</id>";
-		$feed_print .= "<icon>http://" . $serv_name . "/upl/" . $user_avatar . "</icon>";
+		$feed_print .= "<logo>http://" . $serv_name . "/upl/" . $user_avatar . "</logo>";
 	
 	$files_listed = array();
 	foreach (glob('../dat/*.txt') as $quip) {
@@ -58,31 +58,48 @@
 		$miter = htmlspecialchars($last_data);
 		// $miter = str_replace('&lt;br /&gt;','<br />',$miter);
 		// $miter = preg_replace_callback('@(https?://([-\w\.]+)+(:\d+)?(/([-\w/_\.]*(\?\S+)?)?)?)@', function($m) { return '<a href="'.$m[1].'" target="_blank">'.substr($m[1], 0, 30).'</a>'; }, $miter);
-		// $miter = preg_replace('/(?<!\w)#([0-9a-zA-Z]+)/m', '<a href="index.php?q=$1">#$1</a>', $miter);
-		// $miter = preg_replace('#\[b\](.*?)\[/b\]#','<b>$1</b>', $miter);
-		// $miter = preg_replace('#\[i\](.*?)\[/i\]#','<i>$1</i>', $miter);
-		// $miter = preg_replace('#\[u\](.*?)\[/u\]#','<u>$1</u>', $miter);
-		// $miter = preg_replace('#\[s\](.*?)\[/s\]#','<s>$1</s>', $miter);
-		// if (substr($miter, 0, 3) == '&gt') {
-		// 	$miter = preg_replace('/&gt;([^<]*)/m', '<font color="green">&gt;$1</font>', $miter, 1);
-		// }
-		// $miter = preg_replace('/<br \/>&gt;([^<]*)/m', '<br /><font color="green">&gt;$1</font>', $miter);
+		$miter = preg_replace('/(?<!\w)#([0-9a-zA-Z]+)/m', '&lt;a href="http://' . $serv_name . '/index.php?q=$1"&gt;#$1&lt;/a&gt;', $miter);
+	    $miter = preg_replace('#\[b\](.*?)\[/b\]#','&lt;b&gt;$1&lt;/b&gt;', $miter);
+		$miter = preg_replace('#\[i\](.*?)\[/i\]#','&lt;i&gt;$1&lt;/i&gt;', $miter);
+		$miter = preg_replace('#\[u\](.*?)\[/u\]#','&lt;u&gt;$1&lt;/u&gt;', $miter);
+		$miter = preg_replace('#\[s\](.*?)\[/s\]#','&lt;s&gt;$1&lt;/s&gt;', $miter);
+		if (substr($miter, 0, 3) == '&gt') {
+			$miter = preg_replace('/&gt;([^<]*)/m', '&lt;font color="green"&gt;&gt;$1&lt;/font&gt;', $miter, 1);
+			}
+		$miter = preg_replace('/<br \/>&gt;([^<]*)/m', '&lt;br /&gt;&lt;font color="green"&gt;&gt;$1&lt;/font&gt;', $miter);
+		
 		
 		// miter link image video
 		if (strlen($last_img) !== 0) {
-		$miter_link = $serv_name . "" . $last_img;
-		} else if (strlen($last_link) !== 0) {
-		$miter_link = $last_link;
-		}
 		
+		if (strpos($last_link, '.jpg') !== false || strpos($last_link, '.jpeg') !== false) { $media_type = "image/jpeg"; }
+		else if (strpos($last_link, '.png') !== false) { $media_type = "image/png"; }
+		else if (strpos($last_link, '.gif') !== false) { $media_type = "image/gif"; }
+		
+		$miter_link = "http://" . $serv_name . "" . $last_img;
+		
+		} else if (strlen($last_link) !== 0) {
+		
+		$last_link = str_replace('gifv','mp4',$last_link);
+		if (strpos($last_link, '.jpg') !== false || strpos($last_link, '.jpeg') !== false) { $media_type = "image/jpeg"; }
+		else if (strpos($last_link, '.png') !== false) { $media_type = "image/png"; }
+		else if (strpos($last_link, '.gif') !== false) { $media_type = "image/gif"; }
+		else if (strpos($last_link, '.bmp') !== false) { $media_type = "image/bmp"; }
+		else if (strpos($last_link, '.svg') !== false) { $media_type = "image/svg"; }
+		else if (strpos($last_link, '.mp4') !== false) { $media_type = "video/mp4"; }
+		else if (strpos($last_link, '.webm') !== false) { $media_type = "video/webm"; }
+		else { $media_type = "text/html"; }
+		
+		$miter_link = $last_link;
+		
+		}
+				
 		$feed_print .= "<entry>";
 		$feed_print .= "<title>" . substr($miter, 0, 50) . "</title>";
 		$feed_print .= "<link href='http://" . $serv_name . "/index.php?miter=" . $o_perm . "' rel='alternate' />";
-		
 		if (strlen($miter_link) !== 0) {
-		$feed_print .= "<link href='http://" . $miter_link . "' rel='related' />";
+		$feed_print .= "<link rel='enclosure' type='" . $media_type . "' href='" . $miter_link . "' />";
 		}
-		
 		$feed_print .= "<id>http://" . $serv_name . "/index.php?miter=" . $o_perm . "</id>";
 		$feed_print .= "<updated>" . $file_create . "</updated>";
 		$feed_print .= "<content>" . $miter . "</content>";

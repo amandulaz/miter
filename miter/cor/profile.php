@@ -21,10 +21,10 @@
 			<table class="subscribe_table">
 				<tr>
 					<td class="subscribe_left">
-						<span class="tenon"><a href="/dat/" style="color:#111111;">Subscribe</a></span>
+						<span class="tenon"><a href="/cor/atom.php" target="_blank" style="color:#111111;">Subscribe</a></span>
 					</td>
 					<td class="subscribe_right">
-						<span class="tenon"><a href="#" style="color:#111111;">147,936 △</a></span>
+						<span class="tenon"><a href="#" style="color:#111111;">147,986 △</a></span>
 					</td>
 				</tr>
 			</table>

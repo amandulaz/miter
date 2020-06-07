@@ -10,28 +10,18 @@
 	$last_data  = $arc[0];
 	$last_link  = $arc[1];
 	$last_img   = $arc[2];
-	$last_tpimg = $arc[3]; // retired 59019
+	$last_tpimg = $arc[3];
 	$last_odate = $arc[4];
 	$last_gdate = $arc[5];
     
-	// strip html and php
 	$miter = htmlspecialchars($last_data);
-	// fix <br />
 	$miter = str_replace('&lt;br /&gt;','<br />',$miter);
-	
-	// links
 	$miter = preg_replace_callback('@(https?://([-\w\.]+)+(:\d+)?(/([-\w/_\.]*(\?\S+)?)?)?)@', function($m) { return '<a href="'.$m[1].'" target="_blank">'.substr($m[1], 0, 30).'</a>'; }, $miter);
-	
-	// hash tag
 	$miter = preg_replace('/(?<!\w)#([0-9a-zA-Z]+)/m', '<a href="index.php?q=$1">#$1</a>', $miter);
-	
-	// bbcode
 	$miter = preg_replace('#\[b\](.*?)\[/b\]#','<b>$1</b>', $miter);
 	$miter = preg_replace('#\[i\](.*?)\[/i\]#','<i>$1</i>', $miter);
 	$miter = preg_replace('#\[u\](.*?)\[/u\]#','<u>$1</u>', $miter);
 	$miter = preg_replace('#\[s\](.*?)\[/s\]#','<s>$1</s>', $miter);
-	
-	// green text
 	if (substr($miter, 0, 3) == '&gt') {
 		$miter = preg_replace('/&gt;([^<]*)/m', '<span class="green_text">&gt;$1</span>', $miter, 1);
 	}
