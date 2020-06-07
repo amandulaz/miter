@@ -1,3 +1,6 @@
+**080020**  
+updates to atom feed (beta)
+
 **079020**  
 added atom 1.0 feed (subscribe) cor/atom.php (beta)
 
