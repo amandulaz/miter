@@ -14,7 +14,7 @@
 		
 		<link rel="icon" type="image/x-icon" href="img/favicon.ico" />
 		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
-		
+		<link href="cor/atom.xml" type="application/atom+xml" rel="alternate" />
 		<link href="index.css" rel="stylesheet">
 		
 		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
