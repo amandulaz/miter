@@ -88,6 +88,8 @@
 	
 	<body>
 		
+		<a name="top"></a>
+		
 		<div align="center">
 			
 			<? 
@@ -224,6 +226,12 @@
 </table>
 
 </div>
+
+<?
+	if(isMobile()) {
+		echo "<button id='top_button'><a href='#top'><img src='but/top.gif' class='top_button'></a></button>";
+	}
+?>
 
 </body>
 </html>
